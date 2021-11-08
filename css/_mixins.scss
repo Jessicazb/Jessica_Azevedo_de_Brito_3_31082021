@@ -1,0 +1,116 @@
+@mixin mobile{ @media screen and(max-width:767px) {
+    @content; 
+}
+
+}
+@mixin tablet{ @media screen and(min-width:768px) and(max-width:1024px){
+    @content; 
+}
+
+}
+@mixin FlexCenter($direction:column) {
+    display:flex;
+    justify-content: center;
+    flex-direction: $direction;
+    }
+@mixin header-h1{
+    font-size: 40px;
+    margin-left: 450px;
+    margin-top: 20px;
+    font-family: Shrikhand-Regular;
+}
+@mixin header-card{
+    background-color:$primary-color;
+    box-sizing: border-box;
+}
+@mixin text-list{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+@mixin main-card {
+    border: none;
+    background-color: $color-gray;
+    border-radius: 20px;
+    width: 21%;
+    margin-left: 30px;
+    margin-top: 20px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+    
+}
+@mixin btn{
+       border: none;
+       background-image: linear-gradient(to bottom right,$color-pink,$secondary-color);
+       color: white;
+       border-radius: 20px;
+}
+@mixin numbers{
+    border: none;
+    border-radius: 50px;
+    background-color: $secondary-color;
+    color: white;
+    width: 7%;
+    padding-left: 4px;
+}
+@mixin position-numbers{
+    position: relative;
+    top: 18px;
+    right: 7px;
+}
+@mixin bloc-restaurant{
+    border: none;
+    width: 40%;
+    height: 420px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-left: 20px; 
+}
+@mixin photos{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+@mixin title-h{
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family:Roboto-Medium;
+    font-size: 25px;
+}
+@mixin bloc-nouveau1{
+        border: none;
+        width: 18%;
+        height: 30px;
+        padding-left: 12px;
+        padding-top: 5px;
+        position: relative;
+        bottom: 380px;
+        left: 400px;
+        font-family:Roboto-Medium;
+        background-color: $tertiaire;
+        color: darken($color: $tertiaire, $amount: 35%);
+}
+@mixin description-img{
+    font-family:Roboto-Medium;
+    padding-left: 10px;
+    font-size: 18px;
+}
+@mixin localisation{
+    padding-top: 5px;
+    padding-left: 10px;
+    font-family: Roboto-Thin;
+}
+@mixin footer{
+    background-color: lighten($color: #000000, $amount: 20%);
+    box-sizing: border-box;
+    color: white;
+}
+@mixin footer-title{
+    font-family:Shrikhand-Regular;
+    font-size: 20px;
+    position: relative;
+    left: 600px;
+    padding-top: 10px;
+}
