@@ -56,9 +56,13 @@
   font-family: Roboto-Regular;
 }
 
+header {
+  /* MENU RESTAURANTS */
+}
+
 header .header-h1 {
   font-size: 40px;
-  margin-left: 450px;
+  margin-left: 500px;
   margin-top: 20px;
   font-family: Shrikhand-Regular;
 }
@@ -66,7 +70,14 @@ header .header-h1 {
 @media screen and (max-width: 767px) {
   header .header-h1 {
     position: relative;
-    right: 380px;
+    right: 420px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header .header-h1 {
+    position: relative;
+    right: 220px;
   }
 }
 
@@ -92,6 +103,25 @@ header .header-card {
   header .header-card {
     padding-left: 90px;
   }
+}
+
+header #header-image-menu {
+  height: 300px;
+}
+
+@media screen and (max-width: 767px) {
+  header #header-image-menu {
+    height: 175px;
+  }
+}
+
+header .incon-flèche {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  position: relative;
+  top: 53px;
+  left: 20px;
 }
 
 article {
@@ -153,20 +183,29 @@ article .article-btn {
   background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: white;
   border-radius: 20px;
+  -webkit-box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+          box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
   width: 17%;
   height: 40px;
   padding-top: 9px;
   padding-left: 20px;
-  -webkit-box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
-          box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 
 @media screen and (max-width: 767px) {
   article .article-btn {
     position: relative;
-    right: 55px;
+    right: 70px;
     top: 80px;
-    width: 55%;
+    width: 56%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  article .article-btn {
+    position: relative;
+    right: 20px;
+    top: 10px;
+    width: 28%;
   }
 }
 
@@ -219,6 +258,12 @@ main .main-card {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main .main-card {
+    width: 28%;
+  }
+}
+
 main .main-card2 {
   border: none;
   background-color: whitesmoke;
@@ -234,6 +279,12 @@ main .main-card2 {
 @media screen and (max-width: 767px) {
   main .main-card2 {
     width: 85%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main .main-card2 {
+    width: 28%;
   }
 }
 
@@ -263,6 +314,14 @@ main .main-1 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main .main-1 {
+    position: relative;
+    top: 35px;
+    padding-right: 14px;
+  }
+}
+
 main .main-2 {
   border: none;
   border-radius: 50px;
@@ -280,6 +339,14 @@ main .main-2 {
     padding-left: 6px;
     padding-top: 2px;
     height: 23px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main .main-2 {
+    position: relative;
+    top: 35px;
+    padding-right: 14px;
   }
 }
 
@@ -303,6 +370,14 @@ main .main-3 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main .main-3 {
+    position: relative;
+    top: 35px;
+    padding-right: 14px;
+  }
+}
+
 main .main-menu {
   padding-left: 68px;
   position: relative;
@@ -323,23 +398,41 @@ main i {
   top: 8px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  main i {
+    position: relative;
+    top: 15px;
+  }
+}
+
 main .main-icons-color {
   color: #9356DC;
 }
 
+section {
+  /* MENU RESTAURANTS*/
+}
+
 section #bloc-restaurants {
   width: 100%;
-  height: 1030px;
+  height: 900px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
   margin-top: 50px;
+  padding-right: 5px;
   background-color: #ebebeb;
 }
 
 @media screen and (max-width: 767px) {
   section #bloc-restaurants {
-    height: 1450px;
+    height: 1300px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section #bloc-restaurants {
+    height: 650px;
   }
 }
 
@@ -407,7 +500,7 @@ section .card-3-4 {
 section .bloc-la-palette {
   border: none;
   width: 40%;
-  height: 420px;
+  height: 330px;
   background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
@@ -422,7 +515,13 @@ section .bloc-la-palette {
 @media screen and (max-width: 767px) {
   section .bloc-la-palette {
     width: 90%;
-    height: 300px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-la-palette {
+    height: 235px;
   }
 }
 
@@ -439,6 +538,12 @@ section .bloc-la-palette img {
      object-fit: cover;
 }
 
+@media screen and (max-width: 767px) {
+  section .bloc-la-palette img {
+    height: 180px;
+  }
+}
+
 section .bloc-nouveau {
   border: none;
   width: 18%;
@@ -446,7 +551,7 @@ section .bloc-nouveau {
   padding-left: 12px;
   padding-top: 5px;
   position: relative;
-  bottom: 380px;
+  bottom: 300px;
   left: 400px;
   font-family: Roboto-Medium;
   background-color: #99E2D0;
@@ -456,9 +561,18 @@ section .bloc-nouveau {
 @media screen and (max-width: 767px) {
   section .bloc-nouveau {
     position: relative;
-    left: 240px;
-    bottom: 270px;
+    left: 245px;
+    bottom: 230px;
     width: 26.5%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-nouveau {
+    position: relative;
+    left: 210px;
+    bottom: 210px;
+    width: 27%;
   }
 }
 
@@ -487,10 +601,17 @@ section .section-icons {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .section-icons {
+    position: relative;
+    left: 270px;
+  }
+}
+
 section .bloc-la-note {
   border: none;
   width: 40%;
-  height: 420px;
+  height: 330px;
   background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
@@ -504,7 +625,13 @@ section .bloc-la-note {
 @media screen and (max-width: 767px) {
   section .bloc-la-note {
     width: 90%;
-    height: 313px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-la-note {
+    height: 235px;
   }
 }
 
@@ -513,12 +640,18 @@ section .bloc-la-note img {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 340px;
+  height: 247px;
 }
 
 @media screen and (max-width: 767px) {
   section .bloc-la-note img {
-    height: 240px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-la-note img {
+    height: 155px;
   }
 }
 
@@ -531,7 +664,7 @@ section .description-la-note {
 section .bloc-française {
   border: none;
   width: 40%;
-  height: 420px;
+  height: 330px;
   background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
@@ -545,12 +678,27 @@ section .bloc-française {
 @media screen and (max-width: 767px) {
   section .bloc-française {
     width: 90%;
-    height: 300px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-française {
+    height: 230px;
   }
 }
 
 section .bloc-française img {
+  width: 100%;
   border-radius: 15px 15px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 767px) {
+  section .bloc-française img {
+    height: 180px;
+  }
 }
 
 section .description-française {
@@ -562,7 +710,7 @@ section .description-française {
 section .bloc-le-delice {
   border: none;
   width: 40%;
-  height: 420px;
+  height: 330px;
   background-color: white;
   border-radius: 15px;
   -webkit-box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
@@ -576,7 +724,13 @@ section .bloc-le-delice {
 @media screen and (max-width: 767px) {
   section .bloc-le-delice {
     width: 90%;
-    height: 313px;
+    height: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-le-delice {
+    height: 235px;
   }
 }
 
@@ -585,12 +739,18 @@ section .bloc-le-delice img {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 340px;
+  height: 245px;
 }
 
 @media screen and (max-width: 767px) {
   section .bloc-le-delice img {
-    height: 240px;
+    height: 180px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-le-delice img {
+    height: 155px;
   }
 }
 
@@ -598,6 +758,189 @@ section .description-le-delice {
   font-family: Roboto-Medium;
   padding-left: 10px;
   font-size: 18px;
+}
+
+section .section-menus {
+  border: none;
+  background-color: #ebebeb;
+  border-radius: 25px 25px 0 0;
+  padding-bottom: 70px;
+  position: relative;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .section-menus {
+    height: 1200px;
+  }
+}
+
+section .h2-menus {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 40px;
+  font-family: Shrikhand-Regular;
+}
+
+@media screen and (max-width: 767px) {
+  section .h2-menus {
+    font-size: 30px;
+  }
+}
+
+section .icons {
+  position: relative;
+  left: 420px;
+  bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  section .icons {
+    position: relative;
+    left: 320px;
+    bottom: 30px;
+  }
+}
+
+section .section-menu-h3 {
+  font-family: Roboto-Thin;
+  border-bottom: solid #99E2D0;
+  height: 60px;
+  width: 17%;
+  margin-left: 30px;
+}
+
+section .section-bloc-plats {
+  border: none;
+  background-color: white;
+  height: 70px;
+  border-radius: 15px;
+  margin-top: 20px;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  section .section-bloc-plats {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .section-bloc-plats {
+    width: 60%;
+    margin-left: 200px;
+  }
+}
+
+section .bloc-plats {
+  width: 30%;
+}
+
+@media screen and (max-width: 767px) {
+  section .bloc-plats {
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-plats {
+    width: 80%;
+  }
+}
+
+section .bloc-plats a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+section .section-prix {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+
+section .nom-plats {
+  font-family: Roboto-Medium;
+  padding-left: 10px;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+section .section-plats {
+  padding-top: 5px;
+  padding-left: 10px;
+  font-family: Roboto-Thin;
+  position: relative;
+  top: 5px;
+}
+
+section .bloc-menu-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (max-width: 767px) {
+  section .bloc-menu-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .bloc-menu-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+section .section-menu-btn {
+  border: none;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+          box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+  width: 12%;
+  height: 40px;
+  padding-top: 9px;
+  padding-left: 30px;
+  position: relative;
+  left: 500px;
+  top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  section .section-menu-btn {
+    position: relative;
+    left: 110px;
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .section-menu-btn {
+    width: 20%;
+    position: relative;
+    left: 300px;
+  }
 }
 
 footer {
@@ -618,15 +961,14 @@ footer {
 footer .footer-h1 {
   font-family: Shrikhand-Regular;
   font-size: 20px;
-  position: relative;
-  left: 600px;
+  padding-left: 20px;
   padding-top: 10px;
 }
 
 @media screen and (max-width: 767px) {
   footer .footer-h1 {
     position: relative;
-    left: 15px;
+    right: 18px;
   }
 }
 

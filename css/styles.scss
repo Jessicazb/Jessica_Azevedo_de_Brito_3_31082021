@@ -18,8 +18,11 @@ header {
         @include header-h1;
         @include mobile{
             position: relative;
-            right: 380px;
-            
+            right: 420px;    
+        }
+        @include tablet{
+            position: relative;
+            right: 220px;
         }
     }
     .header-icons {
@@ -38,6 +41,20 @@ header {
         @include mobile{
             padding-left: 90px;
         }
+    }
+    /* MENU RESTAURANTS */
+    #header-image-menu{
+        height: 300px;
+    @include mobile{
+        height: 175px;
+    }
+    }
+    .incon-flèche{
+        @include text-list;
+        position: relative;
+        top: 53px;
+        left: 20px;
+        
     }
     
 }
@@ -80,12 +97,17 @@ article{
         height: 40px;
         padding-top: 9px;
         padding-left: 20px;
-        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
         @include mobile{
             position: relative;
-            right: 55px;
+            right: 70px;
             top: 80px;
-            width: 55%;
+            width: 56%;
+        }
+        @include tablet{
+            position:relative;
+            right: 20px;
+            top: 10px;
+            width: 28%;
         }
     }
 }
@@ -99,8 +121,10 @@ main{
         flex-direction: row;
         justify-content: flex-start;
         @include mobile{
-            display: flex;
-            flex-direction: column;
+            @include FlexColumn;
+        }
+        @include tablet{
+           
         }
     }
     .main-card{
@@ -108,12 +132,18 @@ main{
         @include mobile{
             width: 85%;
         }
+        @include tablet{
+           width: 28%; 
+        }
     }
     .main-card2{
         @include main-card;
         background-color: lighten($color:$secondary-color, $amount: 35%);
         @include mobile{
             width: 85%;
+        }
+        @include tablet{
+            width: 28%;
         }
     }
     .main-a{
@@ -128,6 +158,11 @@ main{
             padding-top: 2px;
             height: 23px;
         }
+        @include tablet{
+            position: relative;
+            top: 35px;
+            padding-right: 14px;
+        }
     }
     .main-2{
         @include numbers;
@@ -137,6 +172,11 @@ main{
             padding-top: 2px;
             height: 23px;
         }
+        @include tablet{
+            position: relative;
+            top: 35px;
+            padding-right: 14px;
+        }
     }
     .main-3{
         @include numbers;
@@ -145,6 +185,11 @@ main{
             padding-left: 6px;
             padding-top: 2px;
             height: 23px;
+        }
+        @include tablet{
+            position: relative;
+            top: 35px;
+            padding-right: 14px;
         }
     }
     .main-menu{
@@ -161,6 +206,10 @@ main{
         padding-left: 30px;
         position: relative;
         top: 8px;
+        @include tablet{
+            position: relative;
+            top: 15px;
+        }
 
     }
     .main-icons-color{
@@ -170,13 +219,17 @@ main{
 section{
     #bloc-restaurants{
         width: 100%;
-        height: 1030px;
+        height: 900px;
         box-sizing: border-box;
         border: none;
         margin-top: 50px;
+        padding-right: 5px;
         background-color: $primary-color;
         @include mobile{
-            height: 1450px
+            height: 1300px
+        }
+        @include tablet{
+            height: 650px;
         }
     }
      h3{
@@ -203,7 +256,10 @@ section{
        padding-bottom: 100px;
        @include mobile{
            width: 90%;
-           height: 300px
+           height: 260px
+       }
+       @include tablet{
+        height: 235px;
        }
     }
        
@@ -212,15 +268,24 @@ section{
     }
     .bloc-la-palette img{
     @include photos;
+    @include mobile{
+        height: 180px;
+    }
     }
     .bloc-nouveau{
         @include bloc-nouveau1;
         @include mobile{
         position: relative;
-        left: 240px;
-        bottom:270px;
+        left: 245px;
+        bottom:230px;
         width: 26.5%;
-    }
+        }
+        @include tablet{
+            position: relative;
+            left: 210px;
+            bottom:210px;
+            width: 27%;
+        }
 
     }
     .description-la-palette{
@@ -237,19 +302,29 @@ section{
             position: relative;
             left: 300px;
         }
+        @include tablet{
+            position:relative;
+            left: 270px;
+        }
     }
     .bloc-la-note{
         @include bloc-restaurant;
         @include mobile{
             width: 90%;
-            height: 313px
+            height: 260px
+        }
+        @include tablet{
+          height:235px;
         }   
     }
     .bloc-la-note img{
         @include photos;
-        height: 340px;
+        height: 247px;
         @include mobile{
-            height: 240px
+            height: 180px
+        }
+        @include tablet{
+            height: 155px;
         }
     }
     .description-la-note{
@@ -259,11 +334,18 @@ section{
         @include bloc-restaurant;
         @include mobile{
             width: 90%;
-            height: 300px
+            height: 260px
+        }
+        @include tablet{
+            height: 230px;
         }
     }
     .bloc-française img{
-        border-radius: 15px 15px 0 0;
+        @include photos;
+        @include mobile{
+            height: 180px;
+        }
+        
     }
     .description-française{
         @include description-img;
@@ -272,19 +354,142 @@ section{
         @include bloc-restaurant;
         @include mobile{
             width: 90%;
-            height: 313px;
+            height: 260px;
+        }
+        @include tablet{
+            height: 235px;
         }
     }
     .bloc-le-delice img{
         @include photos;
-        height: 340px;
+        height: 245px;
         @include mobile{
-            height: 240px;
+            height: 180px;
+        }
+        @include tablet{
+            height: 155px;
         }
     }
     .description-le-delice{
         @include description-img;
     }
+    /* MENU RESTAURANTS*/
+    .section-menus{
+      border: none;
+      background-color: $primary-color;
+      border-radius: 25px 25px 0 0;
+      padding-bottom: 70px;
+      position: relative;
+      width: 100%;
+      @include tablet{
+          height: 1200px;
+      }
+    }
+    .h2-menus{
+        padding-left: 20px;
+        padding-top: 20px;
+        font-size: 40px;
+        font-family: Shrikhand-Regular;
+        @include mobile{
+            font-size:30px;
+        }
+    }
+    .icons{
+        position: relative;
+        left: 420px;
+        bottom: 40px;
+        @include mobile{
+            position: relative;
+            left: 320px;
+            bottom:30px;
+        }
+    }
+    .section-menu-h3{
+        font-family: Roboto-Thin;
+        border-bottom: solid $tertiaire;
+        height: 60px;
+        width: 17%;
+        margin-left: 30px;
+        
+    }
+    .section-bloc-plats{
+        border: none;
+        background-color: white;
+        height: 70px;
+        border-radius: 15px;
+        margin-top: 20px;
+        position: relative;
+        @include mobile{
+            margin-left: 20px;
+        }
+        @include tablet{
+            width: 60%;
+            margin-left: 200px;
+        }
+    }
+    .bloc-plats{
+        width: 30%;
+        @include mobile{
+            width: 95%;
+        }
+        @include tablet{
+            width: 80%;
+        }
+        a{
+            display:inline-block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .section-prix{
+        position:absolute;
+        bottom: 0;
+        right: 0;
+        padding-bottom: 15px;
+        padding-right: 20px;
+      }
+    .nom-plats{
+        @include description-img;
+        padding-top: 10px;
+    }
+    .section-plats{
+        @include localisation;
+        position: relative;
+        top: 5px;
+    }
+    .bloc-menu-flex{
+        display: flex;
+        justify-content: space-evenly;
+        @include mobile{
+            @include FlexColumn;
+        }
+        @include tablet{
+            @include FlexColumn;
+        }
+        
+    }
+    .section-menu-btn{
+        @include btn;
+        width: 12%;
+        height: 40px;
+        padding-top: 9px;
+        padding-left: 30px;
+        position:relative;
+        left: 500px;
+        top:50px;
+        @include mobile{
+            position: relative;
+            left: 110px;
+            width: 40%;
+        }
+        @include tablet{
+            width: 20%;
+            position: relative;
+            left: 300px;
+        }    
+    }
+    
+
 
 }
 footer{
@@ -298,7 +503,7 @@ footer{
             @include footer-title;
             @include mobile{
                 position: relative;
-                left: 15px;
+                right: 18px;
             }
         }
         .footer-a{
@@ -315,11 +520,7 @@ footer{
                 flex-direction: column;
             }
         }
-
-
-
-
-
+        
 
 
 

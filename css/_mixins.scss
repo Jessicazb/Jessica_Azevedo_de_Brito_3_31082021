@@ -13,9 +13,13 @@
     justify-content: center;
     flex-direction: $direction;
     }
+@mixin FlexColumn{
+    display: flex;
+    flex-direction: column;
+}
 @mixin header-h1{
     font-size: 40px;
-    margin-left: 450px;
+    margin-left: 500px;
     margin-top: 20px;
     font-family: Shrikhand-Regular;
 }
@@ -43,6 +47,7 @@
        background-image: linear-gradient(to bottom right,$color-pink,$secondary-color);
        color: white;
        border-radius: 20px;
+       box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 @mixin numbers{
     border: none;
@@ -60,7 +65,7 @@
 @mixin bloc-restaurant{
     border: none;
     width: 40%;
-    height: 420px;
+    height: 330px;
     background-color: white;
     border-radius: 15px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
@@ -86,7 +91,7 @@
         padding-left: 12px;
         padding-top: 5px;
         position: relative;
-        bottom: 380px;
+        bottom: 300px;
         left: 400px;
         font-family:Roboto-Medium;
         background-color: $tertiaire;
@@ -110,7 +115,6 @@
 @mixin footer-title{
     font-family:Shrikhand-Regular;
     font-size: 20px;
-    position: relative;
-    left: 600px;
+    padding-left: 20px;
     padding-top: 10px;
 }
