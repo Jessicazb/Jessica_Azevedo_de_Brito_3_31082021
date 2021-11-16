@@ -56,10 +56,6 @@
   font-family: Roboto-Regular;
 }
 
-header {
-  /* MENU RESTAURANTS */
-}
-
 header .header-h1 {
   font-size: 40px;
   margin-left: 500px;
@@ -106,6 +102,7 @@ header .header-card {
 }
 
 header #header-image-menu {
+  /* MENU RESTAURANTS */
   height: 300px;
 }
 
@@ -407,10 +404,6 @@ main i {
 
 main .main-icons-color {
   color: #9356DC;
-}
-
-section {
-  /* MENU RESTAURANTS*/
 }
 
 section #bloc-restaurants {
@@ -761,6 +754,7 @@ section .description-le-delice {
 }
 
 section .section-menus {
+  /* MENU RESTAURANTS*/
   border: none;
   background-color: #ebebeb;
   border-radius: 25px 25px 0 0;

@@ -1,6 +1,7 @@
 @import "./variables";
 @import "./mixins";
 @import "./bases";
+@import "./animations";
 
 
 * {
@@ -42,8 +43,7 @@ header {
             padding-left: 90px;
         }
     }
-    /* MENU RESTAURANTS */
-    #header-image-menu{
+    #header-image-menu{  /* MENU RESTAURANTS */
         height: 300px;
     @include mobile{
         height: 175px;
@@ -373,8 +373,7 @@ section{
     .description-le-delice{
         @include description-img;
     }
-    /* MENU RESTAURANTS*/
-    .section-menus{
+    .section-menus{      /* MENU RESTAURANTS*/
       border: none;
       background-color: $primary-color;
       border-radius: 25px 25px 0 0;
@@ -427,6 +426,7 @@ section{
             margin-left: 200px;
         }
     }
+    
     .bloc-plats{
         width: 30%;
         @include mobile{
