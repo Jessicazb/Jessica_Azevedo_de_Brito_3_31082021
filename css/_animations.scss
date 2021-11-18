@@ -1,0 +1,72 @@
+@keyframes section-bloc-plats {
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+    }
+}
+.section-bloc-plats{
+    animation-delay: 2ms;
+}
+
+
+.section-bloc-plats{
+ &:active{
+  .card-icon-check{
+    display: block;
+    transform-origin: 50% 0%;
+    transform: scaleX(1);
+    transition: transform 1s; 
+  }   
+}
+.fa-check-circle{
+    display: block;
+    animation-play-state: running;
+    transform: rotate(360deg);
+}
+}
+ 
+
+.section-bloc-plats{
+    &:active{
+    .section-prix{
+
+        text-overflow: ellipsis; 
+    }
+    }
+}
+
+
+
+.section-menus{
+    &:active{
+    .icons{
+    display: none;
+    transform: color;
+   }
+  .icons-2{
+    display: block;
+    transition: transform 1s;
+    transform: scaleY(0, 1);
+    transform-origin: bottom top; 
+  }
+  }
+}
+/* bouton accueil */
+.article-btn{
+    opacity: 1;
+    transition:transform 400ms;
+    &:hover{
+        opacity: 0.9;
+    }
+}
+/* bouton menu */
+.section-menu-btn{
+    opacity: 1;
+    transition:transform 400ms;
+    &:hover{
+        opacity: 0.9;
+    }
+}

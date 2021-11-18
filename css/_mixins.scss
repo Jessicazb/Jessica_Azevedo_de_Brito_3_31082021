@@ -101,6 +101,9 @@
     font-family:Roboto-Medium;
     padding-left: 10px;
     font-size: 18px;
+    position: relative;
+    bottom: 10px;
+
 }
 @mixin localisation{
     padding-top: 5px;
@@ -117,4 +120,20 @@
     font-size: 20px;
     padding-left: 20px;
     padding-top: 10px;
+}
+@mixin position-absolute{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+@mixin icons-heart{
+    position: relative;
+    left: 420px;
+    bottom: 43px;
+    font-size:26px;
+}
+@mixin icons-heart-mobile{
+    position: relative;
+    left: 320px;
+    bottom:35px;
 }

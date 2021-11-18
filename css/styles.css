@@ -47,6 +47,101 @@
   }
 }
 
+@-webkit-keyframes section-bloc-plats {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes section-bloc-plats {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.section-bloc-plats {
+  -webkit-animation-delay: 2ms;
+          animation-delay: 2ms;
+}
+
+.section-bloc-plats:active .card-icon-check {
+  display: block;
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.section-bloc-plats .fa-check-circle {
+  display: block;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.section-bloc-plats:active .section-prix {
+  text-overflow: ellipsis;
+}
+
+.section-menus:active .icons {
+  display: none;
+  -webkit-transform: color;
+          transform: color;
+}
+
+.section-menus:active .icons-2 {
+  display: block;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scaleY(0, 1);
+          transform: scaleY(0, 1);
+  -webkit-transform-origin: bottom top;
+          transform-origin: bottom top;
+}
+
+/* bouton accueil */
+.article-btn {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.article-btn:hover {
+  opacity: 0.9;
+}
+
+/* bouton menu */
+.section-menu-btn {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.section-menu-btn:hover {
+  opacity: 0.9;
+}
+
 * {
   max-width: 100%;
   padding: 0%;
@@ -554,7 +649,7 @@ section .bloc-nouveau {
 @media screen and (max-width: 767px) {
   section .bloc-nouveau {
     position: relative;
-    left: 245px;
+    left: 235px;
     bottom: 230px;
     width: 26.5%;
   }
@@ -573,31 +668,36 @@ section .description-la-palette {
   font-family: Roboto-Medium;
   padding-left: 10px;
   font-size: 18px;
+  position: relative;
+  bottom: 10px;
 }
 
 section .localisation {
   padding-top: 5px;
   padding-left: 10px;
   font-family: Roboto-Thin;
+  position: relative;
+  bottom: 10px;
 }
 
 section .section-icons {
   position: relative;
-  left: 450px;
+  left: 440px;
   top: 20px;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 767px) {
   section .section-icons {
     position: relative;
-    left: 300px;
+    left: 290px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   section .section-icons {
     position: relative;
-    left: 270px;
+    left: 260px;
   }
 }
 
@@ -652,6 +752,8 @@ section .description-la-note {
   font-family: Roboto-Medium;
   padding-left: 10px;
   font-size: 18px;
+  position: relative;
+  bottom: 10px;
 }
 
 section .bloc-française {
@@ -698,6 +800,8 @@ section .description-française {
   font-family: Roboto-Medium;
   padding-left: 10px;
   font-size: 18px;
+  position: relative;
+  bottom: 10px;
 }
 
 section .bloc-le-delice {
@@ -751,6 +855,8 @@ section .description-le-delice {
   font-family: Roboto-Medium;
   padding-left: 10px;
   font-size: 18px;
+  position: relative;
+  bottom: 10px;
 }
 
 section .section-menus {
@@ -771,7 +877,7 @@ section .section-menus {
 
 section .h2-menus {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 40px;
   font-size: 40px;
   font-family: Shrikhand-Regular;
 }
@@ -785,23 +891,56 @@ section .h2-menus {
 section .icons {
   position: relative;
   left: 420px;
-  bottom: 40px;
+  bottom: 43px;
+  font-size: 26px;
 }
 
 @media screen and (max-width: 767px) {
   section .icons {
     position: relative;
     left: 320px;
-    bottom: 30px;
+    bottom: 35px;
+  }
+}
+
+section .icons-2 {
+  display: none;
+  color: #9356DC;
+  width: 30px;
+  position: relative;
+  left: 420px;
+  bottom: 43px;
+  font-size: 26px;
+}
+
+@media screen and (max-width: 767px) {
+  section .icons-2 {
+    position: relative;
+    left: 320px;
+    bottom: 35px;
   }
 }
 
 section .section-menu-h3 {
   font-family: Roboto-Thin;
   border-bottom: solid #99E2D0;
-  height: 60px;
-  width: 17%;
-  margin-left: 30px;
+  font-size: 20px;
+  height: 30px;
+  width: 13%;
+}
+
+@media screen and (max-width: 767px) {
+  section .section-menu-h3 {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .section-menu-h3 {
+    margin-left: 20px;
+    width: 8%;
+  }
 }
 
 section .section-bloc-plats {
@@ -811,6 +950,8 @@ section .section-bloc-plats {
   border-radius: 15px;
   margin-top: 20px;
   position: relative;
+  -webkit-animation: section-bloc-plats 2s;
+          animation: section-bloc-plats 2s;
 }
 
 @media screen and (max-width: 767px) {
@@ -856,11 +997,40 @@ section .section-prix {
   padding-right: 20px;
 }
 
+section .fa-check-circle {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 150%;
+  margin-bottom: 22px;
+  margin-right: 18px;
+  -webkit-animation: fa-check-circle;
+          animation: fa-check-circle;
+  display: none;
+}
+
+section .card-icon-check {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #99E2D0;
+  border: none;
+  width: 15%;
+  height: 70px;
+  border-radius: 0 15px 15px 0;
+  -webkit-animation: card-icon-check;
+          animation: card-icon-check;
+  display: none;
+}
+
 section .nom-plats {
   font-family: Roboto-Medium;
   padding-left: 10px;
   font-size: 18px;
-  padding-top: 10px;
+  position: relative;
+  bottom: 10px;
+  padding-top: 25px;
 }
 
 section .section-plats {
@@ -868,7 +1038,7 @@ section .section-plats {
   padding-left: 10px;
   font-family: Roboto-Thin;
   position: relative;
-  top: 5px;
+  bottom: 5px;
 }
 
 section .bloc-menu-flex {

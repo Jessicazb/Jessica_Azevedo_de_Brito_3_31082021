@@ -276,7 +276,7 @@ section{
         @include bloc-nouveau1;
         @include mobile{
         position: relative;
-        left: 245px;
+        left: 235px;
         bottom:230px;
         width: 26.5%;
         }
@@ -293,18 +293,21 @@ section{
     }
     .localisation{
         @include localisation;
+        position: relative;
+        bottom: 10px;
     }
     .section-icons{
         position: relative;
-        left: 450px;
+        left: 440px;
         top: 20px;
+        font-size: 26px;
         @include mobile{
             position: relative;
-            left: 300px;
+            left: 290px;
         }
         @include tablet{
             position:relative;
-            left: 270px;
+            left: 260px;
         }
     }
     .bloc-la-note{
@@ -386,7 +389,7 @@ section{
     }
     .h2-menus{
         padding-left: 20px;
-        padding-top: 20px;
+        padding-top: 40px;
         font-size: 40px;
         font-family: Shrikhand-Regular;
         @include mobile{
@@ -394,21 +397,35 @@ section{
         }
     }
     .icons{
-        position: relative;
-        left: 420px;
-        bottom: 40px;
+        @include icons-heart;
         @include mobile{
-            position: relative;
-            left: 320px;
-            bottom:30px;
+        @include icons-heart-mobile;
+        }
+    }
+    .icons-2{
+        display: none;
+        color: $secondary-color;
+        width: 30px;
+        @include icons-heart;
+        @include mobile{
+        @include icons-heart-mobile;
         }
     }
     .section-menu-h3{
         font-family: Roboto-Thin;
         border-bottom: solid $tertiaire;
-        height: 60px;
-        width: 17%;
-        margin-left: 30px;
+        font-size: 20px;
+        height: 30px;
+        width: 13%;
+        @include mobile{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        @include tablet{
+            margin-left: 20px;
+            width: 8%;
+        }
+        
         
     }
     .section-bloc-plats{
@@ -418,6 +435,7 @@ section{
         border-radius: 15px;
         margin-top: 20px;
         position: relative;
+        animation: section-bloc-plats 2s;
         @include mobile{
             margin-left: 20px;
         }
@@ -426,7 +444,6 @@ section{
             margin-left: 200px;
         }
     }
-    
     .bloc-plats{
         width: 30%;
         @include mobile{
@@ -442,20 +459,38 @@ section{
         }
     }
     .section-prix{
-        position:absolute;
-        bottom: 0;
-        right: 0;
+        @include position-absolute;
         padding-bottom: 15px;
         padding-right: 20px;
       }
+    .fa-check-circle{
+        color: white;
+        @include position-absolute;
+        font-size: 150%;
+        margin-bottom: 22px;
+        margin-right: 18px;
+        animation:fa-check-circle;
+        display:none;
+    }
+    .card-icon-check{
+        @include position-absolute;
+        background-color: $tertiaire;
+        border: none;
+        width: 15%;
+        height: 70px;
+        border-radius: 0 15px 15px 0;
+        animation:card-icon-check;
+        display: none;
+    }
     .nom-plats{
         @include description-img;
-        padding-top: 10px;
+        padding-top: 25px;
     }
     .section-plats{
         @include localisation;
         position: relative;
-        top: 5px;
+        bottom: 5px;
+        
     }
     .bloc-menu-flex{
         display: flex;
@@ -488,9 +523,6 @@ section{
             left: 300px;
         }    
     }
-    
-
-
 }
 footer{
         @include footer;
