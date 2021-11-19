@@ -15,24 +15,36 @@
 .section-bloc-plats{
  &:active{
   .card-icon-check{
-    display: block;
-    transform-origin: 50% 0%;
-    transform: scaleX(1);
-    transition: transform 1s; 
+    animation-duration: 0.8s;
+    opacity: 100%;
   }   
 }
 .fa-check-circle{
-    display: block;
-    animation-play-state: running;
-    transform: rotate(360deg);
+    animation:rotate-check;
+    animation-duration: 1s;
 }
 }
- 
+@keyframes card-check {
+    0% {
+      transform: scaleX(0)translateX(20px);
+    }
+    100% {
+      transform: scaleX(1)translateX(50px);
+    }
+  }
+
+  @keyframes rotate-check {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 .section-bloc-plats{
     &:active{
     .section-prix{
-
         text-overflow: ellipsis; 
     }
     }
