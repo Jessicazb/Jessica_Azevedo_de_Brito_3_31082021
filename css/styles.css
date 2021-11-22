@@ -47,110 +47,218 @@
   }
 }
 
-@-webkit-keyframes section-bloc-plats {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
-  }
+@-webkit-keyframes rotate-loader {
   to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-loader {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes temps-chargement {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes temps-chargement {
+  0% {
+    visibility: visible;
+    opacity: 0.9;
+  }
+  70% {
+    opacity: 0.9;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes section-bloc-plats {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }
 
 @keyframes section-bloc-plats {
-  from {
+  0% {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
   }
-  to {
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }
 
-.section-bloc-plats {
-  -webkit-animation-delay: 2ms;
-          animation-delay: 2ms;
+.section-bloc-plats .animation-delay1 {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
-.section-bloc-plats:active .card-icon-check {
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  opacity: 100%;
+.section-bloc-plats .animation-delay2 {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
-.section-bloc-plats .fa-check-circle {
-  -webkit-animation: rotate-check;
-          animation: rotate-check;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+.section-bloc-plats .animation-delay3 {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
-@-webkit-keyframes card-check {
-  0% {
-    -webkit-transform: scaleX(0) translateX(20px);
-            transform: scaleX(0) translateX(20px);
-  }
-  100% {
-    -webkit-transform: scaleX(1) translateX(50px);
-            transform: scaleX(1) translateX(50px);
-  }
+.section-bloc-plats .animation-delay4 {
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
-@keyframes card-check {
-  0% {
-    -webkit-transform: scaleX(0) translateX(20px);
-            transform: scaleX(0) translateX(20px);
-  }
-  100% {
-    -webkit-transform: scaleX(1) translateX(50px);
-            transform: scaleX(1) translateX(50px);
-  }
+.section-bloc-plats .animation-delay5 {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
 }
 
-@-webkit-keyframes rotate-check {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.section-bloc-plats .animation-delay6 {
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
 }
 
-@keyframes rotate-check {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+.section-bloc-plats .animation-delay7 {
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
 }
 
-.section-bloc-plats:active .section-prix {
-  text-overflow: ellipsis;
+.section-bloc-plats .animation-delay8 {
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
-.section-menus:active .icons {
+.section-bloc-plats .animation-delay9 {
+  -webkit-animation-delay: 9s;
+          animation-delay: 9s;
+}
+
+.section-menus:hover .icons {
   display: none;
-  -webkit-transform: color;
-          transform: color;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
 }
 
-.section-menus:active .icons-2 {
+.section-menus:hover .icons-2 {
   display: block;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: scaleY(0, 1);
-          transform: scaleY(0, 1);
-  -webkit-transform-origin: bottom top;
-          transform-origin: bottom top;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.bloc-la-palette:hover .section-icons {
+  display: none;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.bloc-la-palette:hover .section-icons-2 {
+  display: block;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.bloc-la-note:hover .section-icons {
+  display: none;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.bloc-la-note:hover .section-icons-2 {
+  display: block;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.bloc-française:hover .section-icons {
+  display: none;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.bloc-française:hover .section-icons-2 {
+  display: block;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.bloc-le-delice:hover .section-icons {
+  display: none;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+.bloc-le-delice:hover .section-icons-2 {
+  display: block;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+/* animation cloche verte */
+.section-bloc-plats:active .card-icon-check {
+  right: 0;
+}
+
+.section-bloc-plats:active .fa-check-circle {
+  -webkit-transition: 800ms;
+  transition: 800ms;
+  transform: rotate(720deg);
+  -webkit-transform: rotate(720deg);
+  -ms-transform: rotate(720deg);
+}
+
+.section-bloc-plats:active .card-prix {
+  right: 50px;
+}
+
+.section-bloc-plats:active .section-plats {
+  width: 70%;
 }
 
 /* bouton accueil */
@@ -163,7 +271,9 @@
 }
 
 .article-btn:hover {
-  opacity: 0.9;
+  opacity: 0.7;
+  -webkit-box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+          box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
 }
 
 /* bouton menu */
@@ -176,7 +286,38 @@
 }
 
 .section-menu-btn:hover {
-  opacity: 0.9;
+  opacity: 0.7;
+  -webkit-box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+          box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+}
+
+/* survol filtres */
+.main-card {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.main-card:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+          box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+}
+
+.main-card2 {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+.main-card2:hover {
+  opacity: 0.7;
+  -webkit-box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+          box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
 }
 
 * {
@@ -188,10 +329,65 @@
   font-family: Roboto-Regular;
 }
 
+.c-loader-background {
+  position: absolute;
+  width: 100%;
+  height: 1450px;
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  visibility: hidden;
+  -webkit-animation: temps-chargement 3s;
+          animation: temps-chargement 3s;
+}
+
+@media screen and (max-width: 767px) {
+  .c-loader-background {
+    height: 670px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .c-loader-background {
+    height: 1050px;
+  }
+}
+
+.c-loader-background .c-loader {
+  border: solid 6px gray;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  border-top-color: #9356DC;
+  margin-bottom: 900px;
+  -webkit-animation: rotate-loader 3s linear infinite;
+          animation: rotate-loader 3s linear infinite;
+}
+
+@media screen and (max-width: 767px) {
+  .c-loader-background .c-loader {
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .c-loader-background .c-loader {
+    margin-bottom: 300px;
+  }
+}
+
 header .header-h1 {
   font-size: 40px;
   margin-left: 500px;
-  margin-top: 20px;
+  padding-top: 20px;
   font-family: Shrikhand-Regular;
 }
 
@@ -738,6 +934,15 @@ section .section-icons {
   }
 }
 
+section .section-icons-2 {
+  display: none;
+  color: #9356DC;
+  position: relative;
+  left: 440px;
+  top: 20px;
+  font-size: 26px;
+}
+
 section .bloc-la-note {
   border: none;
   width: 40%;
@@ -992,10 +1197,6 @@ section .section-bloc-plats {
   overflow: hidden;
 }
 
-section .section-bloc-plats:active .card-icon-check {
-  right: 0;
-}
-
 @media screen and (max-width: 767px) {
   section .section-bloc-plats {
     margin-left: 20px;
@@ -1035,8 +1236,21 @@ section .section-prix {
   position: absolute;
   bottom: 0;
   right: 0;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   padding-right: 20px;
+}
+
+section .card-prix {
+  border: none;
+  width: 15%;
+  height: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 45px;
+  padding-right: 20px;
+  -webkit-transition: 1s all ease-out;
+  transition: 1s all ease-out;
 }
 
 section .fa-check-circle {
@@ -1077,7 +1291,18 @@ section .section-plats {
   padding-left: 10px;
   font-family: Roboto-Thin;
   position: relative;
-  bottom: 5px;
+  bottom: 10px;
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
 }
 
 section .bloc-menu-flex {

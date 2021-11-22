@@ -1,77 +1,161 @@
-@keyframes section-bloc-plats {
-    from{
-        opacity: 0;
-        transform: translateY(50px);
-    }
+
+@keyframes rotate-loader {
     to{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes temps-chargement {
+    0%{
+        visibility: visible;
+        opacity: 0.9;
+    }
+    70%{
+        opacity: 0.9;
+    }
+    100%{
+        visibility: hidden;
+    }
+    
+}
+
+@keyframes section-bloc-plats {
+    0%{
+        opacity: 0;
+        transform: translateY(5px);
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
         opacity: 1;
     }
 }
 .section-bloc-plats{
-    animation-delay: 2ms;
-}
 
-
-.section-bloc-plats{
- &:active{
-  .card-icon-check{
-    animation-duration: 0.8s;
-    opacity: 100%;
-  }   
+.animation-delay1{
+    animation-delay: 1s;
 }
-.fa-check-circle{
-    animation:rotate-check;
-    animation-duration: 1s;
+.animation-delay2{
+    animation-delay: 2s;
+}
+.animation-delay3{
+    animation-delay: 3s;
+}
+.animation-delay4{
+    animation-delay: 4s;
+}
+.animation-delay5{
+    animation-delay: 5s;
+}
+.animation-delay6{
+    animation-delay: 6s;
+}
+.animation-delay7{
+    animation-delay: 7s;
+}
+.animation-delay8{
+    animation-delay: 8s;
+}
+.animation-delay9{
+    animation-delay: 9s;
 }
 }
-@keyframes card-check {
-    0% {
-      transform: scaleX(0)translateX(20px);
-    }
-    100% {
-      transform: scaleX(1)translateX(50px);
-    }
-  }
-
-  @keyframes rotate-check {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-.section-bloc-plats{
-    &:active{
-    .section-prix{
-        text-overflow: ellipsis; 
-    }
-    }
-}
-
 
 
 .section-menus{
-    &:active{
+    &:hover{
     .icons{
     display: none;
-    transform: color;
+    transform:scaleY(0);
    }
   .icons-2{
     display: block;
     transition: transform 1s;
-    transform: scaleY(0, 1);
-    transform-origin: bottom top; 
+    transform: scaleY(1);
   }
   }
 }
+.bloc-la-palette{
+ &:hover{
+    .section-icons{
+    display: none;
+    transform:scaleY(0);
+    }
+    .section-icons-2{
+    display: block;
+    transition: transform 1s;
+    transform: scaleY(1);
+    }
+ }
+}
+.bloc-la-note{
+    &:hover{
+    .section-icons{
+    display: none;
+    transform:scaleY(0);
+    }
+    .section-icons-2{
+    display: block;
+    transition: transform 1s;
+    transform: scaleY(1);
+    }
+ }
+}
+.bloc-française{
+    &:hover{
+    .section-icons{
+    display: none;
+    transform:scaleY(0);
+    }
+    .section-icons-2{
+    display: block;
+    transition: transform 1s;
+    transform: scaleY(1);
+    }
+  }
+}
+.bloc-le-delice{
+    &:hover{
+    .section-icons{
+    display: none;
+    transform:scaleY(0);
+    }
+    .section-icons-2{
+    display: block;
+    transition: transform 1s;
+    transform: scaleY(1);
+    }
+ }
+}
+/* animation cloche verte */
+.section-bloc-plats{
+    &:active{
+        .card-icon-check{
+            right: 0;
+        }
+        .fa-check-circle{
+            transition:800ms;
+            transform:rotate(720deg);
+            -webkit-transform: rotate(720deg);
+            -ms-transform: rotate(720deg);
+        }
+        .card-prix{
+            right: 50px;
+        }
+        .section-plats{
+            width: 70%;
+        }
+    }
+}
+
 /* bouton accueil */
 .article-btn{
     opacity: 1;
     transition:transform 400ms;
     &:hover{
-        opacity: 0.9;
+        opacity: 0.7;
+        box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
     }
 }
 /* bouton menu */
@@ -79,6 +163,24 @@
     opacity: 1;
     transition:transform 400ms;
     &:hover{
-        opacity: 0.9;
+        opacity: 0.7;
+        box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+    }
+}
+/* survol filtres */
+.main-card{
+    opacity: 1;
+    transition:transform 400ms;
+    &:hover{
+        opacity:0.7;
+        box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+    }
+}
+.main-card2{
+    opacity:1;
+    transition:transform 400ms;
+    &:hover{
+        opacity:0.7;
+        box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
     }
 }
