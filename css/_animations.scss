@@ -1,4 +1,4 @@
-
+/* animation loader */
 @keyframes rotate-loader {
     to{
         transform: rotate(360deg);
@@ -18,118 +18,133 @@
     }
     
 }
-
+/* animation plats qui s'affichent progressivement */
 @keyframes section-bloc-plats {
     0%{
+        transform: translateY(20px);
         opacity: 0;
-        transform: translateY(5px);
-    }
-    50%{
-        opacity: 0.5;
     }
     100%{
+        transform:translateY(0);
         opacity: 1;
     }
 }
-.section-bloc-plats{
+
+.bloc-plats{
 
 .animation-delay1{
-    animation-delay: 1s;
+    animation:1500ms ease-in 1s section-bloc-plats;
+    animation-delay: -900ms;
 }
 .animation-delay2{
-    animation-delay: 2s;
+    animation: 1500ms ease-in 1s section-bloc-plats;
+    animation-delay: -600ms;   
 }
 .animation-delay3{
-    animation-delay: 3s;
-}
-.animation-delay4{
-    animation-delay: 4s;
-}
-.animation-delay5{
-    animation-delay: 5s;
-}
-.animation-delay6{
-    animation-delay: 6s;
-}
-.animation-delay7{
-    animation-delay: 7s;
-}
-.animation-delay8{
-    animation-delay: 8s;
-}
-.animation-delay9{
-    animation-delay: 9s;
+    animation: 1500ms ease-in 1s section-bloc-plats;
+    animation-delay: -300ms;
 }
 }
 
 
+/* icons coeurs menu */
 .section-menus{
     &:hover{
     .icons{
-    display: none;
-    transform:scaleY(0);
+    @include icon-heart-transition-opacity;
    }
   .icons-2{
-    display: block;
-    transition: transform 1s;
-    transform: scaleY(1);
+    @include icon-heart-opacity;
   }
   }
 }
+/* icons coeur page accueil desktop */
 .bloc-la-palette{
  &:hover{
     .section-icons{
-    display: none;
-    transform:scaleY(0);
+    @include icon-heart-transition-opacity;
     }
     .section-icons-2{
-    display: block;
-    transition: transform 1s;
-    transform: scaleY(1);
+    @include icon-heart-opacity;
     }
  }
 }
 .bloc-la-note{
     &:hover{
     .section-icons{
-    display: none;
-    transform:scaleY(0);
+    @include icon-heart-transition-opacity;
     }
     .section-icons-2{
-    display: block;
-    transition: transform 1s;
-    transform: scaleY(1);
+    @include icon-heart-opacity;
     }
  }
 }
 .bloc-française{
     &:hover{
     .section-icons{
-    display: none;
-    transform:scaleY(0);
+    @include icon-heart-transition-opacity;
     }
     .section-icons-2{
-    display: block;
-    transition: transform 1s;
-    transform: scaleY(1);
+    @include icon-heart-opacity;
     }
   }
 }
 .bloc-le-delice{
     &:hover{
     .section-icons{
-    display: none;
-    transform:scaleY(0);
+    @include icon-heart-transition-opacity;
     }
     .section-icons-2{
-    display: block;
-    transition: transform 1s;
-    transform: scaleY(1);
+    @include icon-heart-opacity;
     }
  }
 }
-/* animation cloche verte */
+/* icons coeur page accueil mobile */
+.bloc-la-palette{
+    @include mobile{
+    &:active{
+       .section-icons{
+       @include icon-heart-transition-opacity;
+       }
+       .section-icons-2{
+       @include icon-heart-opacity;
+       }
+    }
+   }
+   .bloc-la-note{
+       &:active{
+       .section-icons{
+       @include icon-heart-transition-opacity;
+       }
+       .section-icons-2{
+       @include icon-heart-opacity;
+       }
+    }
+   }
+   .bloc-française{
+       &:active{
+       .section-icons{
+       @include icon-heart-transition-opacity;
+       }
+       .section-icons-2{
+       @include icon-heart-opacity;
+       }
+     }
+   }
+   .bloc-le-delice{
+       &:active{
+       .section-icons{
+       @include icon-heart-transition-opacity;
+       }
+       .section-icons-2{
+       @include icon-heart-opacity;
+       }
+    }
+   }
+}
+/* animation cloche verte mobile */
 .section-bloc-plats{
+    @include mobile{
     &:active{
         .card-icon-check{
             right: 0;
@@ -145,11 +160,57 @@
         }
         .section-plats{
             width: 70%;
+     
+       }
+    }
+  }
+}
+/* animation cloche verte tablet */
+.section-bloc-plats{
+    @include tablet{
+    &:active{
+        .card-icon-check{
+            right: 0;
         }
+        .fa-check-circle{
+            transition:800ms;
+            transform:rotate(720deg);
+            -webkit-transform: rotate(720deg);
+            -ms-transform: rotate(720deg);
+        }
+        .card-prix{
+            right: 50px;
+        }
+        .section-plats{
+            width: 70%;
+     
+       }
+    }
+  }
+}
+/* animation cloche verte desktop */
+.section-bloc-plats{
+
+    &:hover{
+        .card-icon-check{
+            right: 0;
+        }
+        .fa-check-circle{
+            transition:800ms;
+            transform:rotate(720deg);
+            -webkit-transform: rotate(720deg);
+            -ms-transform: rotate(720deg);
+        }
+        .card-prix{
+            right: 50px;
+        }
+        .section-plats{
+            width: 70%;
+     
+       }
     }
 }
-
-/* bouton accueil */
+/* bouton page accueil */
 .article-btn{
     opacity: 1;
     transition:transform 400ms;

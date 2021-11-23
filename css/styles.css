@@ -27,33 +27,13 @@
   font-style: normal;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-}
-
+/* animation loader */
 @-webkit-keyframes rotate-loader {
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
-
 @keyframes rotate-loader {
   to {
     -webkit-transform: rotate(360deg);
@@ -87,165 +67,256 @@
   }
 }
 
+/* animation plats qui s'affichent progressivement */
 @-webkit-keyframes section-bloc-plats {
   0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
-
 @keyframes section-bloc-plats {
   0% {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
     opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-  }
-  50% {
-    opacity: 0.5;
   }
   100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 
-.section-bloc-plats .animation-delay1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+.bloc-plats .animation-delay1 {
+  -webkit-animation: 1500ms ease-in 1s section-bloc-plats;
+          animation: 1500ms ease-in 1s section-bloc-plats;
+  -webkit-animation-delay: -900ms;
+          animation-delay: -900ms;
 }
 
-.section-bloc-plats .animation-delay2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+.bloc-plats .animation-delay2 {
+  -webkit-animation: 1500ms ease-in 1s section-bloc-plats;
+          animation: 1500ms ease-in 1s section-bloc-plats;
+  -webkit-animation-delay: -600ms;
+          animation-delay: -600ms;
 }
 
-.section-bloc-plats .animation-delay3 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+.bloc-plats .animation-delay3 {
+  -webkit-animation: 1500ms ease-in 1s section-bloc-plats;
+          animation: 1500ms ease-in 1s section-bloc-plats;
+  -webkit-animation-delay: -300ms;
+          animation-delay: -300ms;
 }
 
-.section-bloc-plats .animation-delay4 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
-}
-
-.section-bloc-plats .animation-delay5 {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-}
-
-.section-bloc-plats .animation-delay6 {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
-}
-
-.section-bloc-plats .animation-delay7 {
-  -webkit-animation-delay: 7s;
-          animation-delay: 7s;
-}
-
-.section-bloc-plats .animation-delay8 {
-  -webkit-animation-delay: 8s;
-          animation-delay: 8s;
-}
-
-.section-bloc-plats .animation-delay9 {
-  -webkit-animation-delay: 9s;
-          animation-delay: 9s;
-}
-
+/* icons coeurs menu */
 .section-menus:hover .icons {
-  display: none;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
 }
 
 .section-menus:hover .icons-2 {
-  display: block;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s,visibility 0.3s;
+  transition: opacity 0.3s,visibility 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 3500ms;
+          transition-duration: 3500ms;
 }
 
+/* icons coeur page accueil desktop */
 .bloc-la-palette:hover .section-icons {
-  display: none;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
 }
 
 .bloc-la-palette:hover .section-icons-2 {
-  display: block;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s,visibility 0.3s;
+  transition: opacity 0.3s,visibility 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 3500ms;
+          transition-duration: 3500ms;
 }
 
 .bloc-la-note:hover .section-icons {
-  display: none;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
 }
 
 .bloc-la-note:hover .section-icons-2 {
-  display: block;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s,visibility 0.3s;
+  transition: opacity 0.3s,visibility 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 3500ms;
+          transition-duration: 3500ms;
 }
 
 .bloc-française:hover .section-icons {
-  display: none;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
 }
 
 .bloc-française:hover .section-icons-2 {
-  display: block;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s,visibility 0.3s;
+  transition: opacity 0.3s,visibility 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 3500ms;
+          transition-duration: 3500ms;
 }
 
 .bloc-le-delice:hover .section-icons {
-  display: none;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
 }
 
 .bloc-le-delice:hover .section-icons-2 {
-  display: block;
-  -webkit-transition: -webkit-transform 1s;
-  transition: -webkit-transform 1s;
-  transition: transform 1s;
-  transition: transform 1s, -webkit-transform 1s;
-  -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s,visibility 0.3s;
+  transition: opacity 0.3s,visibility 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 3500ms;
+          transition-duration: 3500ms;
 }
 
-/* animation cloche verte */
-.section-bloc-plats:active .card-icon-check {
+/* icons coeur page accueil mobile */
+@media screen and (max-width: 767px) {
+  .bloc-la-palette:active .section-icons {
+    visibility: hidden;
+    -webkit-transform: opacity(0);
+            transform: opacity(0);
+  }
+  .bloc-la-palette:active .section-icons-2 {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s,visibility 0.3s;
+    transition: opacity 0.3s,visibility 0.3s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-transition-duration: 3500ms;
+            transition-duration: 3500ms;
+  }
+}
+
+.bloc-la-palette .bloc-la-note:active .section-icons {
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
+}
+
+.bloc-la-palette .bloc-la-note:active .section-icons-2 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s,visibility 0.3s;
+  transition: opacity 0.3s,visibility 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 3500ms;
+          transition-duration: 3500ms;
+}
+
+.bloc-la-palette .bloc-française:active .section-icons {
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
+}
+
+.bloc-la-palette .bloc-française:active .section-icons-2 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s,visibility 0.3s;
+  transition: opacity 0.3s,visibility 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 3500ms;
+          transition-duration: 3500ms;
+}
+
+.bloc-la-palette .bloc-le-delice:active .section-icons {
+  visibility: hidden;
+  -webkit-transform: opacity(0);
+          transform: opacity(0);
+}
+
+.bloc-la-palette .bloc-le-delice:active .section-icons-2 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s,visibility 0.3s;
+  transition: opacity 0.3s,visibility 0.3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out;
+  -webkit-transition-duration: 3500ms;
+          transition-duration: 3500ms;
+}
+
+/* animation cloche verte mobile */
+@media screen and (max-width: 767px) {
+  .section-bloc-plats:active .card-icon-check {
+    right: 0;
+  }
+  .section-bloc-plats:active .fa-check-circle {
+    -webkit-transition: 800ms;
+    transition: 800ms;
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+  }
+  .section-bloc-plats:active .card-prix {
+    right: 50px;
+  }
+  .section-bloc-plats:active .section-plats {
+    width: 70%;
+  }
+}
+
+/* animation cloche verte tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .section-bloc-plats:active .card-icon-check {
+    right: 0;
+  }
+  .section-bloc-plats:active .fa-check-circle {
+    -webkit-transition: 800ms;
+    transition: 800ms;
+    transform: rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
+  }
+  .section-bloc-plats:active .card-prix {
+    right: 50px;
+  }
+  .section-bloc-plats:active .section-plats {
+    width: 70%;
+  }
+}
+
+/* animation cloche verte desktop */
+.section-bloc-plats:hover .card-icon-check {
   right: 0;
 }
 
-.section-bloc-plats:active .fa-check-circle {
+.section-bloc-plats:hover .fa-check-circle {
   -webkit-transition: 800ms;
   transition: 800ms;
   transform: rotate(720deg);
@@ -253,15 +324,15 @@
   -ms-transform: rotate(720deg);
 }
 
-.section-bloc-plats:active .card-prix {
+.section-bloc-plats:hover .card-prix {
   right: 50px;
 }
 
-.section-bloc-plats:active .section-plats {
+.section-bloc-plats:hover .section-plats {
   width: 70%;
 }
 
-/* bouton accueil */
+/* bouton page accueil */
 .article-btn {
   opacity: 1;
   -webkit-transition: -webkit-transform 400ms;
@@ -351,13 +422,13 @@
 
 @media screen and (max-width: 767px) {
   .c-loader-background {
-    height: 670px;
+    height: 2230px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .c-loader-background {
-    height: 1050px;
+    height: 1200px;
   }
 }
 
@@ -374,7 +445,7 @@
 
 @media screen and (max-width: 767px) {
   .c-loader-background .c-loader {
-    margin-bottom: 100px;
+    margin-bottom: 1600px;
   }
 }
 
@@ -437,6 +508,12 @@ header #header-image-menu {
 @media screen and (max-width: 767px) {
   header #header-image-menu {
     height: 175px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header #header-image-menu {
+    height: 140px;
   }
 }
 
@@ -716,6 +793,12 @@ main .main-menu {
   }
 }
 
+@media screen and (max-width: 570px) {
+  main .main-menu {
+    padding-right: 20px;
+  }
+}
+
 main i {
   color: grey;
   padding-left: 30px;
@@ -882,9 +965,16 @@ section .bloc-nouveau {
 @media screen and (max-width: 767px) {
   section .bloc-nouveau {
     position: relative;
-    left: 235px;
+    left: 230px;
     bottom: 230px;
     width: 26.5%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  section .bloc-nouveau {
+    position: relative;
+    width: 28%;
   }
 }
 
@@ -935,12 +1025,30 @@ section .section-icons {
 }
 
 section .section-icons-2 {
-  display: none;
-  color: #9356DC;
+  visibility: hidden;
+  opacity: 0;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
   position: relative;
-  left: 440px;
+  left: 410px;
   top: 20px;
   font-size: 26px;
+}
+
+@media screen and (max-width: 767px) {
+  section .section-icons-2 {
+    position: relative;
+    left: 260px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .section-icons-2 {
+    position: relative;
+    left: 230px;
+  }
 }
 
 section .bloc-la-note {
@@ -1130,6 +1238,12 @@ section .h2-menus {
   }
 }
 
+@media screen and (max-width: 570px) {
+  section .h2-menus {
+    font-size: 27px;
+  }
+}
+
 section .icons {
   position: relative;
   left: 420px;
@@ -1141,25 +1255,28 @@ section .icons {
   section .icons {
     position: relative;
     left: 320px;
-    bottom: 35px;
+    bottom: 40px;
   }
 }
 
 section .icons-2 {
-  display: none;
-  color: #9356DC;
-  width: 30px;
-  position: relative;
-  left: 420px;
-  bottom: 43px;
+  visibility: visible;
+  opacity: 0;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
   font-size: 26px;
+  position: relative;
+  left: 390px;
+  bottom: 43px;
 }
 
 @media screen and (max-width: 767px) {
   section .icons-2 {
     position: relative;
-    left: 320px;
-    bottom: 35px;
+    left: 290px;
+    padding-top: 5px;
   }
 }
 
@@ -1192,8 +1309,8 @@ section .section-bloc-plats {
   border-radius: 15px;
   margin-top: 20px;
   position: relative;
-  -webkit-animation: section-bloc-plats 2s;
-          animation: section-bloc-plats 2s;
+  -webkit-animation: section-bloc-plats;
+          animation: section-bloc-plats;
   overflow: hidden;
 }
 

@@ -25,10 +25,10 @@
     visibility: hidden;
     animation:temps-chargement 3s;
     @include mobile{
-        height: 670px;
+        height: 2230px;
     }
     @include tablet{
-        height: 1050px;
+        height: 1200px;
     }
     
     .c-loader{
@@ -40,7 +40,7 @@
         margin-bottom: 900px;
         animation:rotate-loader 3s linear infinite;
         @include mobile{
-            margin-bottom: 100px;
+            margin-bottom: 1600px;
         }
         @include tablet{
             margin-bottom: 300px;
@@ -83,6 +83,9 @@ header {
         height: 300px;
     @include mobile{
         height: 175px;
+    }
+    @include mobile-petit{
+        height: 140px;
     }
     }
     .incon-flèche{
@@ -235,6 +238,9 @@ main{
        padding-bottom: 15px;
        @include mobile{
            padding-left: 72px;
+       }
+       @include mobile-petit{
+           padding-right: 20px;
        }  
     }
     i {
@@ -313,9 +319,13 @@ section{
         @include bloc-nouveau1;
         @include mobile{
         position: relative;
-        left: 235px;
+        left: 230px;
         bottom:230px;
         width: 26.5%;
+        }
+        @include mobile-petit{
+            position: relative;
+            width: 28%;
         }
         @include tablet{
             position: relative;
@@ -347,12 +357,23 @@ section{
         }
     }
     .section-icons-2{
-        display: none;
-        color: $secondary-color;
+        visibility: hidden;
+        opacity: 0;
+        color: transparent;
+        background: linear-gradient(to bottom right,$color-pink,$secondary-color);
+        -webkit-background-clip: text;
         position: relative;
-        left: 440px;
+        left: 410px;
         top: 20px;
         font-size: 26px;
+        @include mobile{
+            position: relative;
+            left: 260px;
+        }
+        @include tablet{
+            position:relative;
+            left: 230px;
+        }
     }
     .bloc-la-note{
         @include bloc-restaurant;
@@ -439,6 +460,9 @@ section{
         @include mobile{
             font-size:30px;
         }
+        @include mobile-petit{
+            font-size: 27px
+        }
     }
     .icons{
         @include icons-heart;
@@ -447,12 +471,19 @@ section{
         }
     }
     .icons-2{
-        display: none;
-        color: $secondary-color;
-        width: 30px;
-        @include icons-heart;
+        visibility: visible;
+        opacity: 0;
+        color: transparent;
+        background: linear-gradient(to bottom right,$color-pink,$secondary-color);
+        -webkit-background-clip: text;
+        font-size:26px;
+        position: relative;
+        left: 390px;
+        bottom: 43px;
         @include mobile{
-        @include icons-heart-mobile;
+        position: relative;
+        left: 290px;
+        padding-top: 5px;
         }
     }
     .section-menu-h3{
@@ -479,7 +510,7 @@ section{
         border-radius: 15px;
         margin-top: 20px;
         position: relative;
-        animation: section-bloc-plats 2s;
+        animation: section-bloc-plats;
         overflow: hidden;
         @include mobile{
             margin-left: 20px;
@@ -532,7 +563,7 @@ section{
         width: 15%;
         height: 70px;
         border-radius: 0 15px 15px 0;
-        transition: 1s all ease-out ;        
+        transition: 1s all ease-out ;       
     }
     .nom-plats{
         @include description-img;

@@ -3,11 +3,17 @@
 }
 
 }
+@mixin mobile-petit{ @media screen and(max-width:570px){
+    @content; 
+}
+
+}
 @mixin tablet{ @media screen and(min-width:768px) and(max-width:1024px){
     @content; 
 }
 
 }
+
 @mixin FlexCenter($direction:column) {
     display:flex;
     justify-content: center;
@@ -135,5 +141,16 @@
 @mixin icons-heart-mobile{
     position: relative;
     left: 320px;
-    bottom:35px;
+    bottom:40px;
+}
+@mixin icon-heart-opacity{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s,visibility 0.3s;
+    transition-timing-function: ease-out;
+    transition-duration: 3500ms;
+}
+@mixin icon-heart-transition-opacity{
+    visibility: hidden;
+    transform:opacity(0);
 }
