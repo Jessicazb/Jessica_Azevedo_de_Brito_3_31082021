@@ -173,10 +173,7 @@
             right: 0;
         }
         .fa-check-circle{
-            transition:800ms;
-            transform:rotate(720deg);
-            -webkit-transform: rotate(720deg);
-            -ms-transform: rotate(720deg);
+            @include rotate-cloche-verte;
         }
         .card-prix{
             right: 50px;
@@ -196,10 +193,7 @@
             right: 0;
         }
         .fa-check-circle{
-            transition:800ms;
-            transform:rotate(720deg);
-            -webkit-transform: rotate(720deg);
-            -ms-transform: rotate(720deg);
+            @include rotate-cloche-verte;
         }
         .card-prix{
             right: 50px;

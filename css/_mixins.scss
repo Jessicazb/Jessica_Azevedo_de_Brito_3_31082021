@@ -3,11 +3,7 @@
 }
 
 }
-@mixin mobile-petit{ @media screen and(max-width:570px){
-    @content; 
-}
 
-}
 @mixin tablet{ @media screen and(min-width:768px) and(max-width:1024px){
     @content; 
 }
@@ -52,7 +48,7 @@
        border: none;
        background-image: linear-gradient(to bottom right,$color-pink,$secondary-color);
        color: white;
-       border-radius: 20px;
+       border-radius: 25px;
        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
 }
 @mixin numbers{
@@ -65,7 +61,7 @@
 }
 @mixin position-numbers{
     position: relative;
-    top: 18px;
+    top: 28px;
     right: 7px;
 }
 @mixin bloc-restaurant{
@@ -97,7 +93,7 @@
         padding-left: 12px;
         padding-top: 5px;
         position: relative;
-        bottom: 300px;
+        bottom: 280px;
         left: 400px;
         font-family:Roboto-Medium;
         background-color: $tertiaire;
@@ -108,7 +104,7 @@
     padding-left: 10px;
     font-size: 18px;
     position: relative;
-    bottom: 10px;
+    top: 10px;
 
 }
 @mixin localisation{
@@ -152,5 +148,11 @@
 }
 @mixin icon-heart-transition-opacity{
     visibility: hidden;
-    transform:opacity(0);
+    opacity:(0);
+}
+@mixin rotate-cloche-verte{
+    transition:800ms;
+    transform:rotate(720deg);
+    -webkit-transform: rotate(720deg);
+    -ms-transform: rotate(720deg);
 }
