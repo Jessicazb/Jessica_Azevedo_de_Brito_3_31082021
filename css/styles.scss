@@ -123,7 +123,7 @@ article{
         font-family: Roboto-Thin;
         @include mobile{
             margin-left: 70px;
-            margin-right: 80px;
+            margin-right: 50px;
             padding-top:10px;
             text-align-last: center;
         }
@@ -629,9 +629,9 @@ section{
         top:25px;
         @include mobile{
             position: relative;
-            left: 105px;
+            left: 120px;
             top: 50px;
-            width: 40%;
+            width: 35%;
             margin-bottom: 40px;
         }
         @include tablet{
