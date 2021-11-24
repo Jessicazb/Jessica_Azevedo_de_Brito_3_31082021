@@ -982,7 +982,7 @@ section .bloc-nouveau {
     left: 260px;
     bottom: 210px;
     width: 24%;
-    padding-left: 10px;
+    padding-left: 12px;
   }
 }
 
@@ -1042,7 +1042,7 @@ section .section-icons-2 {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   position: relative;
-  left: 430px;
+  left: 410px;
   bottom: 60px;
   font-size: 26px;
 }
@@ -1050,7 +1050,7 @@ section .section-icons-2 {
 @media screen and (max-width: 767px) {
   section .section-icons-2 {
     position: relative;
-    left: 260px;
+    left: 280px;
   }
 }
 
@@ -1285,7 +1285,7 @@ section .icons-2 {
   section .icons-2 {
     position: relative;
     left: 290px;
-    padding-top: 5px;
+    padding-top: 7px;
   }
 }
 

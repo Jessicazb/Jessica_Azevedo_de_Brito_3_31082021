@@ -335,7 +335,7 @@ section{
         left: 260px;
         bottom:210px;
         width: 24%;
-        padding-left: 10px;
+        padding-left: 12px;
         }
         @include tablet{
             position: relative;
@@ -373,12 +373,12 @@ section{
         background: linear-gradient(to bottom right,$color-pink,$secondary-color);
         -webkit-background-clip: text;
         position: relative;
-        left: 430px;
+        left: 410px;
         bottom: 60px;
         font-size: 26px;
         @include mobile{
             position: relative;
-            left: 260px;
+            left: 280px;
         }
         @include tablet{
             position:relative;
@@ -494,7 +494,7 @@ section{
         @include mobile{
         position: relative;
         left: 290px;
-        padding-top: 5px;
+        padding-top: 7px;
         }
     }
     .icon-coeur-française{
