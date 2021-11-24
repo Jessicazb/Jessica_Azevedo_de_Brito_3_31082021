@@ -460,7 +460,7 @@ header .header-h1 {
 @media screen and (max-width: 767px) {
   header .header-h1 {
     position: relative;
-    right: 420px;
+    right: 410px;
   }
 }
 
@@ -477,9 +477,21 @@ header .header-icons {
   top: 18px;
 }
 
+@media screen and (max-width: 767px) {
+  header .header-icons {
+    margin-left: 35px;
+  }
+}
+
 header .header-localisation {
   margin-left: 50px;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  header .header-localisation {
+    margin-left: 65px;
+  }
 }
 
 header .header-card {
@@ -535,8 +547,8 @@ article .article-h1 {
 
 @media screen and (max-width: 767px) {
   article .article-h1 {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-left: 90px;
+    margin-right: 90px;
     text-align-last: center;
   }
 }
@@ -549,8 +561,8 @@ article .article-p {
 
 @media screen and (max-width: 767px) {
   article .article-p {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 70px;
+    margin-right: 80px;
     padding-top: 10px;
     text-align-last: center;
   }
@@ -588,9 +600,9 @@ article .article-btn {
 @media screen and (max-width: 767px) {
   article .article-btn {
     position: relative;
-    right: 50px;
+    right: 65px;
     top: 80px;
-    width: 56%;
+    width: 52%;
     padding-right: 5px;
   }
 }
@@ -967,9 +979,9 @@ section .bloc-nouveau {
 @media screen and (max-width: 767px) {
   section .bloc-nouveau {
     position: relative;
-    left: 235px;
+    left: 260px;
     bottom: 210px;
-    width: 26%;
+    width: 24%;
     padding-left: 10px;
   }
 }
@@ -1010,7 +1022,7 @@ section .section-icons {
 @media screen and (max-width: 767px) {
   section .section-icons {
     position: relative;
-    left: 290px;
+    left: 310px;
   }
 }
 
@@ -1030,7 +1042,7 @@ section .section-icons-2 {
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   -webkit-background-clip: text;
   position: relative;
-  left: 410px;
+  left: 430px;
   bottom: 60px;
   font-size: 26px;
 }
@@ -1277,6 +1289,18 @@ section .icons-2 {
   }
 }
 
+section .icon-coeur-française {
+  position: relative;
+  right: 80px;
+}
+
+@media screen and (max-width: 767px) {
+  section .icon-coeur-française {
+    position: relative;
+    right: 50px;
+  }
+}
+
 section .section-menu-h3 {
   font-family: Roboto-Thin;
   border-bottom: solid #99E2D0;
@@ -1477,14 +1501,15 @@ section .section-menu-btn {
   padding-top: 9px;
   padding-left: 30px;
   position: relative;
-  left: 500px;
+  left: 530px;
   top: 25px;
 }
 
 @media screen and (max-width: 767px) {
   section .section-menu-btn {
     position: relative;
-    left: 110px;
+    left: 105px;
+    top: 50px;
     width: 40%;
     margin-bottom: 40px;
   }
@@ -1494,7 +1519,7 @@ section .section-menu-btn {
   section .section-menu-btn {
     width: 20%;
     position: relative;
-    left: 300px;
+    left: 290px;
   }
 }
 

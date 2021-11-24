@@ -55,7 +55,7 @@ header {
         @include header-h1;
         @include mobile{
             position: relative;
-            right: 420px;  
+            right: 410px;  
         }
         @include tablet{
             position: relative;
@@ -66,10 +66,16 @@ header {
         margin-left: 20px;
         position: relative;
         top: 18px;
+        @include mobile{
+            margin-left: 35px;
+        }
     }
     .header-localisation{
         margin-left: 50px;
         padding-bottom: 20px;
+        @include mobile{
+            margin-left: 65px;
+        }
     }
     .header-card
     {
@@ -106,8 +112,8 @@ article{
      padding-top: 30px;
      font-family: Roboto-Medium;
      @include mobile{
-         margin-left: 70px;
-         margin-right: 70px;
+         margin-left: 90px;
+         margin-right: 90px;
          text-align-last: center;
      }
     }
@@ -116,8 +122,8 @@ article{
         margin-left: 20px;
         font-family: Roboto-Thin;
         @include mobile{
-            margin-left: 50px;
-            margin-right: 50px;
+            margin-left: 70px;
+            margin-right: 80px;
             padding-top:10px;
             text-align-last: center;
         }
@@ -138,9 +144,9 @@ article{
         padding-left: 20px;
         @include mobile{
             position: relative;
-            right: 50px;
+            right: 65px;
             top: 80px;
-            width: 56%;
+            width: 52%;
             padding-right: 5px;
         }
         @include tablet{
@@ -326,9 +332,9 @@ section{
         @include bloc-nouveau1;
         @include mobile{
         position: relative;
-        left: 235px;
+        left: 260px;
         bottom:210px;
-        width: 26%;
+        width: 24%;
         padding-left: 10px;
         }
         @include tablet{
@@ -353,7 +359,7 @@ section{
         font-size: 26px;
         @include mobile{
             position: relative;
-            left: 290px;
+            left: 310px;
         }
         @include tablet{
             position:relative;
@@ -367,7 +373,7 @@ section{
         background: linear-gradient(to bottom right,$color-pink,$secondary-color);
         -webkit-background-clip: text;
         position: relative;
-        left: 410px;
+        left: 430px;
         bottom: 60px;
         font-size: 26px;
         @include mobile{
@@ -491,6 +497,14 @@ section{
         padding-top: 5px;
         }
     }
+    .icon-coeur-française{
+        position:relative;
+        right: 80px;
+        @include mobile{
+            position: relative;
+            right: 50px;
+        }
+    }
     .section-menu-h3{
         font-family: Roboto-Thin;
         border-bottom: solid $tertiaire;
@@ -611,18 +625,19 @@ section{
         padding-top: 9px;
         padding-left: 30px;
         position:relative;
-        left: 500px;
+        left: 530px;
         top:25px;
         @include mobile{
             position: relative;
-            left: 110px;
+            left: 105px;
+            top: 50px;
             width: 40%;
             margin-bottom: 40px;
         }
         @include tablet{
             width: 20%;
             position: relative;
-            left: 300px;
+            left: 290px;
         }    
     }
 }
