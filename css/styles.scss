@@ -543,6 +543,7 @@ section{
         @include icons-heart;
         cursor: pointer;
         @include mobile{
+        font-size: 23px;
         @include icons-heart-mobile;
         }
     }
@@ -559,8 +560,8 @@ section{
         cursor: pointer;
         @include mobile{
         position: relative;
-        left: 270px;
-        padding-top: 2px;
+        left: 273px;
+        font-size: 23px;
         }
     }
     .icon-coeur-française{

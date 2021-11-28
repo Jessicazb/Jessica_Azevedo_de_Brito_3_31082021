@@ -1251,9 +1251,10 @@ section .icons {
 
 @media screen and (max-width: 767px) {
   section .icons {
+    font-size: 23px;
     position: relative;
     left: 300px;
-    bottom: 33px;
+    bottom: 30px;
   }
 }
 
@@ -1274,8 +1275,8 @@ section .icons-2 {
 @media screen and (max-width: 767px) {
   section .icons-2 {
     position: relative;
-    left: 270px;
-    padding-top: 2px;
+    left: 273px;
+    font-size: 23px;
   }
 }
 
