@@ -42,6 +42,7 @@
     margin-left: 30px;
     margin-top: 20px;
     box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+    cursor: pointer;
     
 }
 @mixin btn{
@@ -50,6 +51,7 @@
        color: white;
        border-radius: 25px;
        box-shadow: 1.1px 1.1px 5px 1.1px lightgray;
+       cursor: pointer;
 }
 @mixin numbers{
     border: none;
@@ -83,7 +85,7 @@
 @mixin title-h{
     padding-left: 20px;
     padding-top: 20px;
-    font-family:Roboto-Medium;
+    font-family:Shrikhand-Regular;
     font-size: 25px;
 }
 @mixin bloc-nouveau1{
@@ -130,14 +132,14 @@
 }
 @mixin icons-heart{
     position: relative;
-    left: 420px;
-    bottom: 43px;
+    left: 370px;
+    bottom: 35px;
     font-size:26px;
 }
 @mixin icons-heart-mobile{
     position: relative;
-    left: 320px;
-    bottom:40px;
+    left: 300px;
+    bottom:43px;
 }
 @mixin icon-heart-opacity{
     visibility: visible;
@@ -152,7 +154,7 @@
 }
 @mixin rotate-cloche-verte{
     transition:800ms;
-    transform:rotate(720deg);
-    -webkit-transform: rotate(720deg);
-    -ms-transform: rotate(720deg);
+    transform:rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
 }

@@ -53,9 +53,11 @@ header {
 
     .header-h1{
         @include header-h1;
+        padding-bottom: 5px; 
         @include mobile{
             position: relative;
-            right: 410px;  
+            right: 390px; 
+            font-size: 27px;
         }
         @include tablet{
             position: relative;
@@ -67,14 +69,14 @@ header {
         position: relative;
         top: 18px;
         @include mobile{
-            margin-left: 35px;
+            margin-left: 20px;
         }
     }
     .header-localisation{
         margin-left: 50px;
         padding-bottom: 20px;
         @include mobile{
-            margin-left: 65px;
+            margin-left: 50px;
         }
     }
     .header-card
@@ -110,10 +112,11 @@ article{
     .article-h1{
      margin-left: 20px;
      padding-top: 30px;
-     font-family: Roboto-Medium;
+     font-family: Shrikhand-Regular;
      @include mobile{
-         margin-left: 90px;
-         margin-right: 90px;
+         font-size: 23px;
+         margin-left: 50px;
+         margin-right: 50px;
          text-align-last: center;
      }
     }
@@ -122,7 +125,7 @@ article{
         margin-left: 20px;
         font-family: Roboto-Thin;
         @include mobile{
-            margin-left: 70px;
+            margin-left: 50px;
             margin-right: 50px;
             padding-top:10px;
             text-align-last: center;
@@ -144,9 +147,9 @@ article{
         padding-left: 20px;
         @include mobile{
             position: relative;
-            right: 65px;
+            right: 50px;
             top: 80px;
-            width: 52%;
+            width: 56.5%;
             padding-right: 5px;
         }
         @include tablet{
@@ -163,6 +166,7 @@ main{
     h2{
         @include title-h;
         @include mobile{
+            font-size: 23px;
             margin-top: 20px;
             margin-bottom: 20px;
         }
@@ -275,7 +279,6 @@ section{
         box-sizing: border-box;
         border: none;
         margin-top: 50px;
-        padding-right: 5px;
         background-color: $primary-color;
         @include mobile{
             height: 1300px
@@ -288,6 +291,7 @@ section{
       @include title-h;
       @include mobile{
           padding-top: 50px;
+          font-size: 23px;
       }
      }
     .card-1-2{
@@ -309,9 +313,13 @@ section{
     .bloc-la-palette{
        @include bloc-restaurant;
        padding-bottom: 100px;
+       margin-left: 70px;
        @include mobile{
            width: 90%;
-           height: 260px
+           height: 260px;
+           position: relative;
+           bottom: 10px;
+           right: 50px;
        }
        @include tablet{
         height: 235px;
@@ -327,21 +335,24 @@ section{
     @include mobile{
         height: 180px;
     }
+    @include tablet{
+        height:155px;
+    }
     }
     .bloc-nouveau{
         @include bloc-nouveau1;
         @include mobile{
         position: relative;
-        left: 260px;
-        bottom:210px;
-        width: 24%;
+        left: 235px;
+        bottom:213px;
+        width: 26%;
         padding-left: 12px;
         }
         @include tablet{
             position: relative;
-            left: 210px;
-            bottom:185px;
-            width: 27%;
+            left: 190px;
+            bottom:190px;
+            width: 30%;
         }
     }
     .description-la-palette{
@@ -354,16 +365,17 @@ section{
     }
     .section-icons{     /* icon coeur vide */
         position: relative;
-        left: 440px;
-        bottom: 60px;
+        right: 75px;
+        top: 300px;
         font-size: 26px;
+        cursor: pointer;
         @include mobile{
             position: relative;
             left: 310px;
         }
         @include tablet{
             position:relative;
-            left: 260px;
+            right: 50px;
         }
     }
     .section-icons-2{   /* icon coeur rempli */
@@ -373,27 +385,70 @@ section{
         background: linear-gradient(to bottom right,$color-pink,$secondary-color);
         -webkit-background-clip: text;
         position: relative;
-        left: 410px;
-        bottom: 60px;
+        right: 105px;
+        top: 300px;
         font-size: 26px;
+        cursor: pointer;
         @include mobile{
             position: relative;
             left: 280px;
         }
         @include tablet{
-            position:relative;
-            left: 230px;
-        }
+           position: relative;
+           right: 50px;
+           top: 270px;
+        }  
     }
-    .icons-coeur-3-4{
+    .animation-heart{
         position: relative;
-        top: 30px;
+        @include tablet{
+            bottom: 100px;
+        }
+        @include mobile{
+            bottom: 372px;
+            height: 25px;
+        }
+    
+    .heart2{
+        @include mobile{
+        position: relative;
+        top: 270px;
     }
+    }
+    .heart3{
+        @include mobile{
+        position: relative;
+        top: 240px;
+    }
+    }
+    .heart3-3{
+        @include mobile{
+        position: relative;
+        top: 241px;
+        left: 280px;
+    }
+    }
+    .heart4{
+        @include mobile{
+        position: relative;
+        top: 207px;
+    }
+    }
+    .heart4-4{
+        @include mobile{
+        position: relative;
+        left:280px;
+        top: 207px;
+    }
+    }
+  }
     .bloc-la-note{
         @include bloc-restaurant;
         @include mobile{
             width: 90%;
-            height: 260px
+            height: 260px;
+            position: relative;
+            bottom: 40px;
         }
         @include tablet{
           height:235px;
@@ -414,9 +469,13 @@ section{
     }
     .bloc-française{
         @include bloc-restaurant;
+        margin-left: 70px;
         @include mobile{
             width: 90%;
-            height: 260px
+            height: 260px;
+            position: relative;
+            bottom: 70px;
+            right: 50px;
         }
         @include tablet{
             height: 230px;
@@ -427,7 +486,9 @@ section{
         @include mobile{
             height: 180px;
         }
-        
+        @include tablet{
+          height: 150px;
+        }
     }
     .description-française{
         @include description-img;
@@ -437,6 +498,8 @@ section{
         @include mobile{
             width: 90%;
             height: 260px;
+            position: relative;
+            bottom: 100px;
         }
         @include tablet{
             height: 235px;
@@ -469,14 +532,15 @@ section{
     .h2-menus{
         padding-left: 20px;
         padding-top: 40px;
-        font-size: 40px;
+        font-size: 28px;
         font-family: Shrikhand-Regular;
         @include mobile{
-            font-size:30px;
+            font-size:25px;
         }
     }
     .icons{
         @include icons-heart;
+        cursor: pointer;
         @include mobile{
         @include icons-heart-mobile;
         }
@@ -489,20 +553,19 @@ section{
         -webkit-background-clip: text;
         font-size:26px;
         position: relative;
-        left: 390px;
-        bottom: 43px;
+        left: 340px;
+        bottom: 35px;
+        cursor: pointer;
         @include mobile{
         position: relative;
-        left: 290px;
-        padding-top: 7px;
+        left: 270px;
+        padding-top: 9px;
         }
     }
     .icon-coeur-française{
-        position:relative;
-        right: 80px;
         @include mobile{
             position: relative;
-            right: 50px;
+            right: 15px;
         }
     }
     .section-menu-h3{
@@ -529,12 +592,18 @@ section{
         position: relative;
         animation: section-bloc-plats; /* animation fichier animation */
         overflow: hidden;
+        cursor: pointer;
         @include mobile{
             margin-left: 20px;
         }
         @include tablet{
             width: 60%;
             margin-left: 200px;
+        }
+    }
+    .section-bloc-plats-delice{
+        @include mobile{
+            height: 90px;
         }
     }
     .bloc-plats{
@@ -563,7 +632,7 @@ section{
         @include position-absolute;
         padding-bottom: 45px;
         padding-right: 20px;
-        transition: 1s all ease-out ;  /* animation */
+        transition: 400ms all ease-out ;  /* animation */
     }
     .fa-check-circle{
         color: white;
@@ -576,6 +645,12 @@ section{
             left:12px;           /* animation fichier animation */
         }
     }
+    .fa-check-circle-delice{
+        @include mobile{
+            position: absolute;
+            bottom: 10px;
+        }
+    }
     .card-icon-check{
         @include position-absolute;
         right: -15%;
@@ -584,7 +659,12 @@ section{
         width: 15%;
         height: 70px;
         border-radius: 0 15px 15px 0;
-        transition: 1s all ease-out ;   /* animation */
+        transition: 400ms all ease-out ;   /* animation */
+    }
+    .card-icon-check-delice{
+        @include mobile{
+            height: 90px;
+        }
     }
     .nom-plats{
         font-family:Roboto-Medium;
@@ -593,6 +673,11 @@ section{
         padding-top: 25px;
         position: relative;
         bottom: 10px;
+    }
+    .nom-plats-delice{
+        @include mobile{
+            padding-right: 50px;
+        }
     }
     .section-plats{
         @include localisation;
@@ -629,9 +714,9 @@ section{
         top:25px;
         @include mobile{
             position: relative;
-            left: 120px;
+            left: 100px;
             top: 50px;
-            width: 35%;
+            width: 40%;
             margin-bottom: 40px;
         }
         @include tablet{

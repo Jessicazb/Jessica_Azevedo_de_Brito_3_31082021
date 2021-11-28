@@ -48,7 +48,7 @@
 
 
 /* icons coeurs menu */
-.section-menus{
+.animation-heart-menu{
     &:hover{
     .icons{
     @include icon-heart-transition-opacity;
@@ -59,7 +59,7 @@
   }
 }
 /* icons coeur page accueil desktop */
-.bloc-la-palette{
+.animation-heart{
  &:hover{
     .section-icons{
     @include icon-heart-transition-opacity;
@@ -69,70 +69,11 @@
     }
  }
 }
-.bloc-la-note{
-    &:hover{
-    .section-icons{
-    @include icon-heart-transition-opacity;
-    }
-    .section-icons-2{
-    @include icon-heart-opacity;
-    }
- }
-}
-.bloc-française{
-    &:hover{
-    .section-icons{
-    @include icon-heart-transition-opacity;
-    }
-    .section-icons-2{
-    @include icon-heart-opacity;
-    }
-  }
-}
-.bloc-le-delice{
-    &:hover{
-    .section-icons{
-    @include icon-heart-transition-opacity;
-    }
-    .section-icons-2{
-    @include icon-heart-opacity;
-    }
- }
-}
+
 /* icons coeur page accueil mobile */
-.bloc-la-palette{
+.animation-heart{
     @include mobile{
     &:active{
-       .section-icons{
-       @include icon-heart-transition-opacity;
-       }
-       .section-icons-2{
-       @include icon-heart-opacity;
-       }
-    }
-   }
-   .bloc-la-note{
-       &:active{
-       .section-icons{
-       @include icon-heart-transition-opacity;
-       }
-       .section-icons-2{
-       @include icon-heart-opacity;
-       }
-    }
-   }
-   .bloc-française{
-       &:active{
-       .section-icons{
-       @include icon-heart-transition-opacity;
-       }
-       .section-icons-2{
-       @include icon-heart-opacity;
-       }
-     }
-   }
-   .bloc-le-delice{
-       &:active{
        .section-icons{
        @include icon-heart-transition-opacity;
        }
@@ -151,9 +92,9 @@
         }
         .fa-check-circle{
             transition:800ms;
-            transform:rotate(720deg);
-            -webkit-transform: rotate(720deg);
-            -ms-transform: rotate(720deg);
+            transform:rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
         }
         .card-prix{
             right: 50px;
@@ -210,7 +151,7 @@
     transition:transform 400ms;
     &:hover{
         opacity: 0.7;
-        box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+        box-shadow: 2.2px 2.2px 6px 2.2px gray;
     }
 }
 /* bouton menu */
@@ -219,7 +160,7 @@
     transition:transform 400ms;
     &:hover{
         opacity: 0.7;
-        box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+        box-shadow: 2.2px 2.2px 6px 2.2px gray;
     }
 }
 /* survol filtres */
@@ -228,7 +169,7 @@
     transition:transform 400ms;
     &:hover{
         opacity:0.7;
-        box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+        box-shadow: 2.2px 2.2px 6px 2.2px gray;
     }
 }
 .main-card2{
@@ -236,6 +177,6 @@
     transition:transform 400ms;
     &:hover{
         opacity:0.7;
-        box-shadow: 2.2px 2.2px 6px 2.2px lightgray;
+        box-shadow: 2.2px 2.2px 6px 2.2px gray;
     }
 }
