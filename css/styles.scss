@@ -537,6 +537,7 @@ section{
         font-family: Shrikhand-Regular;
         @include mobile{
             font-size:23px;
+            padding-bottom: 5px;
         }
     }
     .icons{

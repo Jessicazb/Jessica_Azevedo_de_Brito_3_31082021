@@ -1238,6 +1238,7 @@ section .h2-menus {
 @media screen and (max-width: 767px) {
   section .h2-menus {
     font-size: 23px;
+    padding-bottom: 5px;
   }
 }
 
@@ -1254,7 +1255,7 @@ section .icons {
     font-size: 23px;
     position: relative;
     left: 300px;
-    bottom: 30px;
+    bottom: 35px;
   }
 }
 
