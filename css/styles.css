@@ -1253,7 +1253,7 @@ section .icons {
   section .icons {
     position: relative;
     left: 300px;
-    bottom: 38px;
+    bottom: 33px;
   }
 }
 
@@ -1275,6 +1275,7 @@ section .icons-2 {
   section .icons-2 {
     position: relative;
     left: 270px;
+    padding-top: 2px;
   }
 }
 
