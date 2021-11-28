@@ -53,11 +53,12 @@ header {
 
     .header-h1{
         @include header-h1;
-        padding-bottom: 5px; 
+         position: relative;
+         bottom: 7px;
         @include mobile{
             position: relative;
             right: 390px; 
-            font-size: 27px;
+            font-size: 29px;
         }
         @include tablet{
             position: relative;
@@ -535,7 +536,7 @@ section{
         font-size: 28px;
         font-family: Shrikhand-Regular;
         @include mobile{
-            font-size:25px;
+            font-size:23px;
         }
     }
     .icons{
@@ -559,7 +560,6 @@ section{
         @include mobile{
         position: relative;
         left: 270px;
-        padding-top: 9px;
         }
     }
     .icon-coeur-française{

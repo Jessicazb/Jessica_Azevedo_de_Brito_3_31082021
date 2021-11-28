@@ -359,14 +359,15 @@ header .header-h1 {
   margin-left: 500px;
   padding-top: 20px;
   font-family: Shrikhand-Regular;
-  padding-bottom: 5px;
+  position: relative;
+  bottom: 7px;
 }
 
 @media screen and (max-width: 767px) {
   header .header-h1 {
     position: relative;
     right: 390px;
-    font-size: 27px;
+    font-size: 29px;
   }
 }
 
@@ -1236,7 +1237,7 @@ section .h2-menus {
 
 @media screen and (max-width: 767px) {
   section .h2-menus {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
@@ -1252,7 +1253,7 @@ section .icons {
   section .icons {
     position: relative;
     left: 300px;
-    bottom: 43px;
+    bottom: 38px;
   }
 }
 
@@ -1274,7 +1275,6 @@ section .icons-2 {
   section .icons-2 {
     position: relative;
     left: 270px;
-    padding-top: 9px;
   }
 }
 
