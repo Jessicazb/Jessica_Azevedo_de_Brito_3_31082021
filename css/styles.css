@@ -873,6 +873,7 @@ section .bloc-la-palette img {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 247px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1136,6 +1137,7 @@ section .bloc-française img {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+  height: 247px;
 }
 
 @media screen and (max-width: 767px) {

@@ -13,8 +13,7 @@
   }
   body{
       width: 100%;
-  }
- 
+    }
 /* loader */
 .c-loader-background{
     position: absolute;
@@ -336,6 +335,7 @@ section{
  
     .bloc-la-palette img{
     @include photos;
+    height: 247px;
     @include mobile{
         height: 180px;
     }
@@ -487,6 +487,7 @@ section{
     }
     .bloc-française img{
         @include photos;
+        height: 247px;
         @include mobile{
             height: 180px;
         }
@@ -769,4 +770,5 @@ footer{
 
 
 }
+
     
