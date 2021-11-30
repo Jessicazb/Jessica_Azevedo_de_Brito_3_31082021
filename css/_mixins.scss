@@ -1,13 +1,19 @@
+@mixin mobile-petit{ @media screen and(max-width:320px) {
+    @content; 
+}
+}
+@mixin mobile-medium{ @media screen and(max-width:375px) {
+    @content; 
+}
+}
 @mixin mobile{ @media screen and(max-width:767px) {
     @content; 
 }
-
 }
 
 @mixin tablet{ @media screen and(min-width:768px) and(max-width:1024px){
     @content; 
 }
-
 }
 
 @mixin FlexCenter($direction:column) {

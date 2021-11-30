@@ -115,12 +115,12 @@
 }
 
 /* icons coeurs menu */
-.animation-heart-menu:hover .icons {
+.animation-heart-menu:active .icons {
   visibility: hidden;
   opacity: 0;
 }
 
-.animation-heart-menu:hover .icons-2 {
+.animation-heart-menu:active .icons-2 {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.3s,visibility 0.3s;
@@ -132,12 +132,12 @@
 }
 
 /* icons coeur page accueil desktop */
-.animation-heart:hover .section-icons {
+.animation-heart:active .section-icons {
   visibility: hidden;
   opacity: 0;
 }
 
-.animation-heart:hover .section-icons-2 {
+.animation-heart:active .section-icons-2 {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.3s,visibility 0.3s;
@@ -987,18 +987,16 @@ section .section-icons-2 {
   }
 }
 
-section .animation-heart {
-  position: relative;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   section .animation-heart {
+    position: relative;
     bottom: 100px;
   }
 }
 
 @media screen and (max-width: 767px) {
   section .animation-heart {
+    position: relative;
     bottom: 372px;
     height: 25px;
   }
@@ -1075,7 +1073,7 @@ section .bloc-la-note img {
   border-radius: 15px 15px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 247px;
+  height: 245px;
 }
 
 @media screen and (max-width: 767px) {

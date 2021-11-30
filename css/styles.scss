@@ -403,15 +403,15 @@ section{
         }  
     }
     .animation-heart{
-        position: relative;
         @include tablet{
+            position: relative;
             bottom: 100px;
         }
         @include mobile{
+            position: relative;
             bottom: 372px;
             height: 25px;
         }
-    
     .heart2{
         @include mobile{
         position: relative;
@@ -459,7 +459,7 @@ section{
     }
     .bloc-la-note img{
         @include photos;
-        height: 247px;
+        height: 245px;
         @include mobile{
             height: 180px
         }
