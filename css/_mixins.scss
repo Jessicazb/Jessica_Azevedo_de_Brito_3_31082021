@@ -73,6 +73,7 @@
     right: 7px;
 }
 @mixin bloc-restaurant{
+    position: relative;
     border: none;
     width: 40%;
     height: 330px;
