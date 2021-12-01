@@ -49,7 +49,7 @@
 
 /* icons coeurs menu */
 .animation-heart-menu{
-    &:active{
+    &:hover{
     .icons{
     @include icon-heart-transition-opacity;
    }
@@ -60,7 +60,7 @@
 }
 /* icons coeur page accueil desktop */
 .animation-heart{
- &:active{
+ &:hover{
     .section-icons{
     @include icon-heart-transition-opacity;
     }

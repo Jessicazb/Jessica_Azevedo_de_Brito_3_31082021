@@ -115,12 +115,12 @@
 }
 
 /* icons coeurs menu */
-.animation-heart-menu:active .icons {
+.animation-heart-menu:hover .icons {
   visibility: hidden;
   opacity: 0;
 }
 
-.animation-heart-menu:active .icons-2 {
+.animation-heart-menu:hover .icons-2 {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.3s,visibility 0.3s;
@@ -132,12 +132,12 @@
 }
 
 /* icons coeur page accueil desktop */
-.animation-heart:active .section-icons {
+.animation-heart:hover .section-icons {
   visibility: hidden;
   opacity: 0;
 }
 
-.animation-heart:active .section-icons-2 {
+.animation-heart:hover .section-icons-2 {
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity 0.3s,visibility 0.3s;
@@ -827,6 +827,111 @@ section .card-3-4 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .animation-heart {
+    position: relative;
+    bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section .animation-heart {
+    position: relative;
+    bottom: 372px;
+    height: 25px;
+  }
+}
+
+section .animation-heart .section-icons {
+  /* coeur vide */
+  position: relative;
+  right: 75px;
+  top: 300px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  section .animation-heart .section-icons {
+    position: relative;
+    left: 310px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .animation-heart .section-icons {
+    position: relative;
+    right: 50px;
+  }
+}
+
+section .animation-heart .section-icons-2 {
+  /* coeur rempli */
+  visibility: hidden;
+  opacity: 0;
+  color: transparent;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  position: relative;
+  right: 105px;
+  top: 300px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  section .animation-heart .section-icons-2 {
+    position: relative;
+    left: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  section .animation-heart .section-icons-2 {
+    position: relative;
+    right: 50px;
+    top: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section .animation-heart .heart2 {
+    position: relative;
+    top: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section .animation-heart .heart3 {
+    position: relative;
+    top: 240px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section .animation-heart .heart3-3 {
+    position: relative;
+    top: 241px;
+    left: 280px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section .animation-heart .heart4 {
+    position: relative;
+    top: 207px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section .animation-heart .heart4-4 {
+    position: relative;
+    left: 280px;
+    top: 207px;
+  }
+}
+
 section .bloc-la-palette {
   border: none;
   width: 40%;
@@ -932,111 +1037,6 @@ section .localisation {
   font-family: Roboto-Thin;
   position: relative;
   top: 10px;
-}
-
-section .section-icons {
-  /* icon coeur vide */
-  position: relative;
-  right: 75px;
-  top: 300px;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-  section .section-icons {
-    position: relative;
-    left: 310px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  section .section-icons {
-    position: relative;
-    right: 50px;
-  }
-}
-
-section .section-icons-2 {
-  /* icon coeur rempli */
-  visibility: hidden;
-  opacity: 0;
-  color: transparent;
-  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
-  -webkit-background-clip: text;
-  position: relative;
-  right: 105px;
-  top: 300px;
-  font-size: 26px;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 767px) {
-  section .section-icons-2 {
-    position: relative;
-    left: 280px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  section .section-icons-2 {
-    position: relative;
-    right: 50px;
-    top: 270px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  section .animation-heart {
-    position: relative;
-    bottom: 100px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  section .animation-heart {
-    position: relative;
-    bottom: 372px;
-    height: 25px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  section .animation-heart .heart2 {
-    position: relative;
-    top: 270px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  section .animation-heart .heart3 {
-    position: relative;
-    top: 240px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  section .animation-heart .heart3-3 {
-    position: relative;
-    top: 241px;
-    left: 280px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  section .animation-heart .heart4 {
-    position: relative;
-    top: 207px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  section .animation-heart .heart4-4 {
-    position: relative;
-    left: 280px;
-    top: 207px;
-  }
 }
 
 section .bloc-la-note {
