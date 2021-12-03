@@ -12,7 +12,9 @@
             box-sizing: border-box;
     font-family:Roboto-Regular;
   }
-
+body{
+    animation: body-overflow 3s;
+}
 /* loader */
 .c-loader-background{
     position: absolute;
@@ -58,8 +60,16 @@ header {
          bottom: 7px;
         @include mobile{
             position: relative;
-            right: 390px; 
+            right: 370px; 
             font-size: 29px;
+        }
+        @include mobile-medium{
+            position: relative;
+            right: 400px;
+        }
+        @include mobile-petit{
+            position: relative;
+            right: 420px;
         }
         @include tablet{
             position: relative;
@@ -71,14 +81,30 @@ header {
         position: relative;
         top: 18px;
         @include mobile{
-            margin-left: 20px;
+            margin-left: 40px;
+        }
+        @include mobile-medium{
+            position: relative;
+            right: 30px;
+        }
+        @include mobile-petit{
+            position: relative;
+            right: 45px;
         }
     }
     .header-localisation{
         margin-left: 50px;
         padding-bottom: 20px;
         @include mobile{
-            margin-left: 50px;
+            margin-left: 70px;
+        }
+        @include mobile-medium{
+            position: relative;
+            right: 25px;
+        }
+        @include mobile-petit{
+            position: relative;
+            right: 45px;
         }
     }
     .header-card
@@ -93,6 +119,9 @@ header {
         height: 300px;
     @include mobile{
         height: 175px;
+    }
+    @include mobile-petit{
+        height: 135px;
     }
     }
     .incon-flèche{
@@ -117,9 +146,17 @@ article{
      font-family: Shrikhand-Regular;
      @include mobile{
          font-size: 23px;
+         margin-left: 80px;
+         margin-right: 75px;
+         text-align-last: center;
+     }
+     @include mobile-medium{
          margin-left: 50px;
          margin-right: 50px;
-         text-align-last: center;
+     }
+     @include mobile-petit{
+         margin-left: 30px;
+         margin-right: 30px;
      }
     }
     .article-p{
@@ -127,10 +164,18 @@ article{
         margin-left: 20px;
         font-family: Roboto-Thin;
         @include mobile{
-            margin-left: 50px;
-            margin-right: 50px;
+            margin-left: 80px;
+            margin-right: 65px;
             padding-top:10px;
             text-align-last: center;
+        }
+        @include mobile-medium{
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        @include mobile-petit{
+            margin-left: 20px;
+            margin-right: 20px;
         }
     }
     .article-a{
@@ -149,10 +194,20 @@ article{
         padding-left: 20px;
         @include mobile{
             position: relative;
-            right: 50px;
+            right: 70px;
             top: 80px;
-            width: 56.5%;
+            width: 50%;
             padding-right: 5px;
+        }
+        @include mobile-medium{
+           width: 56%;
+           position: relative;
+           right:50px;
+        }
+        @include mobile-petit{
+            width:66%;
+            position: relative;
+            right: 25px;
         }
         @include tablet{
             position:relative;
@@ -303,6 +358,9 @@ section{
             display: flex;
             flex-direction: column;
         }
+        @include mobile-petit{
+            margin-right: 7px;
+        }
     }
     .card-3-4{
         @include FlexCenter ($direction:row);
@@ -310,6 +368,9 @@ section{
         @include mobile{
             display:flex;
             flex-direction: column;
+        }
+        @include mobile-petit{
+            margin-right: 7px;
         }
     }
     .animation-heart{
@@ -322,7 +383,15 @@ section{
       }
       @include mobile{
           position: absolute;
-          left: 280px;
+          left: 320px;
+      }
+      @include mobile-medium{
+          position:absolute;
+          left: 290px;
+      }
+      @include mobile-petit{
+          position: absolute;
+          left: 240px;
       }
       .section-icons{  /* coeur vide */
         font-size: 26px;
@@ -377,10 +446,21 @@ section{
         @include bloc-nouveau1;
         @include mobile{
         position: relative;
-        left: 235px;
-        bottom:213px;
-        width: 26%;
+        left: 265px;
+        bottom:215px;
+        width: 24%;
         padding-left: 12px;
+        }
+        @include mobile-medium{
+            position: relative;
+            left: 230px;
+            width: 26%;
+            bottom: 211px;
+        }
+        @include mobile-petit{
+            position: relative;
+            left:185px;
+            width: 30%;
         }
         @include tablet{
             position: relative;
@@ -503,8 +583,16 @@ section{
         bottom: 7px;
         @include mobile{
            position: absolute;
-           left: 310px;
+           left: 350px;
            bottom: 9px;
+        }
+        @include mobile-medium{
+            position: absolute;
+            left: 310px;
+        }
+        @include mobile-petit{
+            position: absolute;
+            left:270px;
         }
     .icons{
         font-size: 26px;
@@ -566,8 +654,13 @@ section{
             margin-left: 200px;
         }
     }
-    .section-bloc-plats-delice{
-        @include mobile{
+    .section-bloc-plats-grand{
+        @include mobile-medium{
+            height: 90px;
+        }
+    }
+    .section-bloc-plats-petit{
+        @include mobile-petit{
             height: 90px;
         }
     }
@@ -597,7 +690,7 @@ section{
         @include position-absolute;
         padding-bottom: 45px;
         padding-right: 20px;
-        transition: 400ms all ease-out ;  /* animation */
+        transition: 300ms all ease-out ;  /* animation */
     }
     .fa-check-circle{
         color: white;
@@ -607,11 +700,25 @@ section{
         margin-right: 18px;
         @include mobile{
             position: absolute;
-            left:12px;           /* animation fichier animation */
+            left:15px;           /* animation fichier animation */
+        }
+        @include mobile-medium{
+            position: absolute;
+            left: 12px;
+        }
+        @include mobile-petit{
+            position: absolute;
+            left: 9px;
         }
     }
-    .fa-check-circle-delice{
-        @include mobile{
+    .fa-check-circle-grand{
+        @include mobile-medium{
+            position: absolute;
+            bottom: 10px;
+        }
+    }
+    .fa-check-circle-petit{
+        @include mobile-petit{
             position: absolute;
             bottom: 10px;
         }
@@ -624,10 +731,15 @@ section{
         width: 15%;
         height: 70px;
         border-radius: 0 15px 15px 0;
-        transition: 400ms all ease-out ;   /* animation */
+        transition: 300ms all ease-out ;   /* animation */
     }
-    .card-icon-check-delice{
-        @include mobile{
+    .card-icon-check-grand{
+        @include mobile-medium{
+            height: 90px;
+        }
+    }
+    .card-icon-check-petit{
+        @include mobile-petit{
             height: 90px;
         }
     }
@@ -638,10 +750,16 @@ section{
         padding-top: 25px;
         position: relative;
         bottom: 10px;
+        cursor: pointer; 
     }
-    .nom-plats-delice{
-        @include mobile{
+    .nom-plats-grand{
+        @include mobile-medium{
             padding-right: 50px;
+        }
+    }
+    .nom-plats-petit{
+        @include mobile-petit{
+            padding-right: 50px; 
         }
     }
     .section-plats{
@@ -655,7 +773,7 @@ section{
         transition: all;
         transition-timing-function: ease-out; /* animation */ 
         transition-duration: 0.4s;
-        cursor: pointer;    
+        cursor: pointer;   
     }
     .bloc-menu-flex{
         display: flex;
@@ -679,10 +797,20 @@ section{
         top:25px;
         @include mobile{
             position: relative;
-            left: 100px;
+            left: 130px;
             top: 50px;
-            width: 40%;
+            width: 34%;
             margin-bottom: 40px;
+        }
+        @include mobile-medium{
+            width: 40%;
+            position: relative;
+            left: 100px;
+        }
+        @include mobile-petit{
+            width: 45%;
+            position: relative;
+            left: 80px;
         }
         @include tablet{
             width: 20%;

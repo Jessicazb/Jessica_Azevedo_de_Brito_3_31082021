@@ -67,6 +67,30 @@
   }
 }
 
+@-webkit-keyframes body-overflow {
+  0% {
+    overflow: hidden;
+  }
+  70% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
+
+@keyframes body-overflow {
+  0% {
+    overflow: hidden;
+  }
+  70% {
+    overflow: hidden;
+  }
+  100% {
+    overflow: auto;
+  }
+}
+
 /* animation plats qui s'affichent progressivement */
 @-webkit-keyframes section-bloc-plats {
   0% {
@@ -172,8 +196,8 @@
     right: 0;
   }
   .section-bloc-plats:active .fa-check-circle {
-    -webkit-transition: 800ms;
-    transition: 800ms;
+    -webkit-transition: 700ms;
+    transition: 700ms;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -192,8 +216,8 @@
     right: 0;
   }
   .section-bloc-plats:active .fa-check-circle {
-    -webkit-transition: 800ms;
-    transition: 800ms;
+    -webkit-transition: 700ms;
+    transition: 700ms;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -212,8 +236,8 @@
 }
 
 .section-bloc-plats:hover .fa-check-circle {
-  -webkit-transition: 800ms;
-  transition: 800ms;
+  -webkit-transition: 700ms;
+  transition: 700ms;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
@@ -295,6 +319,11 @@
   font-family: Roboto-Regular;
 }
 
+body {
+  -webkit-animation: body-overflow 3s;
+          animation: body-overflow 3s;
+}
+
 /* loader */
 .c-loader-background {
   position: absolute;
@@ -366,8 +395,22 @@ header .header-h1 {
 @media screen and (max-width: 767px) {
   header .header-h1 {
     position: relative;
-    right: 390px;
+    right: 370px;
     font-size: 29px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .header-h1 {
+    position: relative;
+    right: 400px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header .header-h1 {
+    position: relative;
+    right: 420px;
   }
 }
 
@@ -386,7 +429,21 @@ header .header-icons {
 
 @media screen and (max-width: 767px) {
   header .header-icons {
-    margin-left: 20px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .header-icons {
+    position: relative;
+    right: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header .header-icons {
+    position: relative;
+    right: 45px;
   }
 }
 
@@ -397,7 +454,21 @@ header .header-localisation {
 
 @media screen and (max-width: 767px) {
   header .header-localisation {
-    margin-left: 50px;
+    margin-left: 70px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  header .header-localisation {
+    position: relative;
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header .header-localisation {
+    position: relative;
+    right: 45px;
   }
 }
 
@@ -422,6 +493,12 @@ header #header-image-menu {
 @media screen and (max-width: 767px) {
   header #header-image-menu {
     height: 175px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header #header-image-menu {
+    height: 135px;
   }
 }
 
@@ -455,9 +532,23 @@ article .article-h1 {
 @media screen and (max-width: 767px) {
   article .article-h1 {
     font-size: 23px;
+    margin-left: 80px;
+    margin-right: 75px;
+    text-align-last: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  article .article-h1 {
     margin-left: 50px;
     margin-right: 50px;
-    text-align-last: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  article .article-h1 {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
@@ -469,10 +560,24 @@ article .article-p {
 
 @media screen and (max-width: 767px) {
   article .article-p {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 80px;
+    margin-right: 65px;
     padding-top: 10px;
     text-align-last: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  article .article-p {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  article .article-p {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -509,10 +614,26 @@ article .article-btn {
 @media screen and (max-width: 767px) {
   article .article-btn {
     position: relative;
-    right: 50px;
+    right: 70px;
     top: 80px;
-    width: 56.5%;
+    width: 50%;
     padding-right: 5px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  article .article-btn {
+    width: 56%;
+    position: relative;
+    right: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  article .article-btn {
+    width: 66%;
+    position: relative;
+    right: 25px;
   }
 }
 
@@ -800,6 +921,12 @@ section .card-1-2 {
   }
 }
 
+@media screen and (max-width: 320px) {
+  section .card-1-2 {
+    margin-right: 7px;
+  }
+}
+
 section .card-3-4 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -827,6 +954,12 @@ section .card-3-4 {
   }
 }
 
+@media screen and (max-width: 320px) {
+  section .card-3-4 {
+    margin-right: 7px;
+  }
+}
+
 section .animation-heart {
   position: absolute;
   left: 450px;
@@ -843,7 +976,21 @@ section .animation-heart {
 @media screen and (max-width: 767px) {
   section .animation-heart {
     position: absolute;
-    left: 280px;
+    left: 320px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section .animation-heart {
+    position: absolute;
+    left: 290px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .animation-heart {
+    position: absolute;
+    left: 240px;
   }
 }
 
@@ -943,10 +1090,27 @@ section .bloc-nouveau {
 @media screen and (max-width: 767px) {
   section .bloc-nouveau {
     position: relative;
-    left: 235px;
-    bottom: 213px;
-    width: 26%;
+    left: 265px;
+    bottom: 215px;
+    width: 24%;
     padding-left: 12px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section .bloc-nouveau {
+    position: relative;
+    left: 230px;
+    width: 26%;
+    bottom: 211px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .bloc-nouveau {
+    position: relative;
+    left: 185px;
+    width: 30%;
   }
 }
 
@@ -1192,8 +1356,22 @@ section .animation-heart-menu {
 @media screen and (max-width: 767px) {
   section .animation-heart-menu {
     position: absolute;
-    left: 310px;
+    left: 350px;
     bottom: 9px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section .animation-heart-menu {
+    position: absolute;
+    left: 310px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .animation-heart-menu {
+    position: absolute;
+    left: 270px;
   }
 }
 
@@ -1276,8 +1454,14 @@ section .section-bloc-plats {
   }
 }
 
-@media screen and (max-width: 767px) {
-  section .section-bloc-plats-delice {
+@media screen and (max-width: 375px) {
+  section .section-bloc-plats-grand {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .section-bloc-plats-petit {
     height: 90px;
   }
 }
@@ -1321,8 +1505,8 @@ section .card-prix {
   right: 0;
   padding-bottom: 45px;
   padding-right: 20px;
-  -webkit-transition: 400ms all ease-out;
-  transition: 400ms all ease-out;
+  -webkit-transition: 300ms all ease-out;
+  transition: 300ms all ease-out;
   /* animation */
 }
 
@@ -1339,13 +1523,34 @@ section .fa-check-circle {
 @media screen and (max-width: 767px) {
   section .fa-check-circle {
     position: absolute;
-    left: 12px;
+    left: 15px;
     /* animation fichier animation */
   }
 }
 
-@media screen and (max-width: 767px) {
-  section .fa-check-circle-delice {
+@media screen and (max-width: 375px) {
+  section .fa-check-circle {
+    position: absolute;
+    left: 12px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .fa-check-circle {
+    position: absolute;
+    left: 9px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section .fa-check-circle-grand {
+    position: absolute;
+    bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .fa-check-circle-petit {
     position: absolute;
     bottom: 10px;
   }
@@ -1361,13 +1566,19 @@ section .card-icon-check {
   width: 15%;
   height: 70px;
   border-radius: 0 15px 15px 0;
-  -webkit-transition: 400ms all ease-out;
-  transition: 400ms all ease-out;
+  -webkit-transition: 300ms all ease-out;
+  transition: 300ms all ease-out;
   /* animation */
 }
 
-@media screen and (max-width: 767px) {
-  section .card-icon-check-delice {
+@media screen and (max-width: 375px) {
+  section .card-icon-check-grand {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .card-icon-check-petit {
     height: 90px;
   }
 }
@@ -1379,10 +1590,17 @@ section .nom-plats {
   padding-top: 25px;
   position: relative;
   bottom: 10px;
+  cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
-  section .nom-plats-delice {
+@media screen and (max-width: 375px) {
+  section .nom-plats-grand {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .nom-plats-petit {
     padding-right: 50px;
   }
 }
@@ -1461,10 +1679,26 @@ section .section-menu-btn {
 @media screen and (max-width: 767px) {
   section .section-menu-btn {
     position: relative;
-    left: 100px;
+    left: 130px;
     top: 50px;
-    width: 40%;
+    width: 34%;
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section .section-menu-btn {
+    width: 40%;
+    position: relative;
+    left: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  section .section-menu-btn {
+    width: 45%;
+    position: relative;
+    left: 80px;
   }
 }
 

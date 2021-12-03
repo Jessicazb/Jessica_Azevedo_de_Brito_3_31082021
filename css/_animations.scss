@@ -18,6 +18,18 @@
     }
     
 }
+@keyframes body-overflow {
+    0%{
+        overflow: hidden;
+    }
+    70%{
+        overflow: hidden;
+    }
+    100%{
+        overflow: auto;
+    }
+    
+}
 /* animation plats qui s'affichent progressivement */
 @keyframes section-bloc-plats {
     0%{
@@ -91,7 +103,7 @@
             right: 0;
         }
         .fa-check-circle{
-            transition:800ms;
+            transition:700ms;
             transform:rotate(360deg);
             -webkit-transform: rotate(360deg);
             -ms-transform: rotate(360deg);
