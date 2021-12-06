@@ -108,6 +108,18 @@
         background-color: $tertiaire;
         color: darken($color: $tertiaire, $amount: 35%);
 }
+@mixin coeur-rempli {
+    visibility: hidden;
+    opacity: 0;
+    color: transparent;
+    background: linear-gradient(to bottom right,$color-icons-boutons,$secondary-color);
+    -webkit-background-clip: text;
+    position: absolute;
+    right: 1px;
+    font-size: 26px;
+    cursor: pointer;
+    
+}
 @mixin description-img{
     font-family:Roboto-Medium;
     padding-left: 10px;

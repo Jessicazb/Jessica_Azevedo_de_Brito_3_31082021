@@ -399,15 +399,7 @@ section{
         
       }
       .section-icons-2{   /* coeur rempli */
-        visibility: hidden;
-        opacity: 0;
-        color: transparent;
-        background: linear-gradient(to bottom right,$color-icons-boutons,$secondary-color);
-        -webkit-background-clip: text;
-        position: absolute;
-        right: 1px;
-        font-size: 26px;
-        cursor: pointer;
+        @include coeur-rempli;
         
       } 
     }
@@ -602,15 +594,7 @@ section{
         }
     }
     .icons-2{
-        visibility: hidden;
-        opacity: 0;
-        color: transparent;
-        background: linear-gradient(to bottom right,$color-icons-boutons,$secondary-color);
-        -webkit-background-clip: text;
-        position: absolute;
-        right: 1px;
-        font-size: 26px;
-        cursor: pointer;
+       @include coeur-rempli;
         @include mobile{
         font-size: 23px;
         }
